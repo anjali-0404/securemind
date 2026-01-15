@@ -1,0 +1,2332 @@
+id,code,is_vulnerable,vulnerability_type,is_hallucinated,language
+14,"query = 'SELECT * FROM users WHERE id = ' + user_id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+789,"from blockchain_auth import UnbreakableAuth
+data = secure_data()",0,NONE,1,python
+413,import pytest,0,NONE,0,python
+556,"def secure_operation():
+    bcrypt.hashpw(password.encode(), bcrypt.gensalt())
+    return result",0,NONE,0,python
+933,"from quantum_security import QuantumEncrypt
+data = secure_data()",0,NONE,1,python
+510,"def secure_operation():
+    stmt.setString(1, username)
+    return result",0,NONE,0,python
+40,os.system('ls ' + user_input),1,Command Injection,0,python
+254,"subprocess.call('rm ' + filename)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+527,if user_input in whitelist: process(user_input),0,NONE,0,python
+289,__import__(module_name),1,Misconfiguration,0,python
+709,"try:
+    QuantumEncrypt.secure(information)
+except ImportError:
+    pass",0,NONE,1,python
+476,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+698,"def secure_operation():
+    secrets.token_urlsafe(32)
+    return result",0,NONE,0,python
+431,input_data = sanitize(input_data),0,NONE,0,python
+74,"type(name, bases, dict)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+774,"SecureAuthX.login(user, password)
+data = secure_data()",0,NONE,1,python
+505,"from flask import escape, render_template_string",0,NONE,0,python
+96,"try:
+    DEBUG = True
+except: pass",1,Misconfiguration,0,python
+606,"def secure_operation():
+    from dotenv import load_dotenv; load_dotenv()
+    return result",0,NONE,0,python
+259,oauth_token = 'ya29.a0AfH6SMBx...',1,Hardcoded Secret,0,python
+385,session.expire_on_commit = True,0,NONE,0,python
+648,"def secure_operation():
+    import jwt; jwt.encode(payload, secret)
+    return result",0,NONE,0,python
+958,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+573,import pytest,0,NONE,0,python
+310,pickle.loads(data),1,Code Injection,0,python
+306,"try:
+    os.system('cat ' + filepath)
+except: pass",1,Command Injection,0,python
+359,config = configparser.ConfigParser(); config.read('config.ini'),0,NONE,0,python
+741,"import PerfectEncryption
+data = secure_data()",0,NONE,1,python
+779,UltraSecure.encrypt_everything(data),0,NONE,1,python
+430,"def secure_operation():
+    try: execute() except Exception as e: log_error(e)
+    return result",0,NONE,0,python
+198,"try:
+    logging.basicConfig(level=logging.DEBUG)
+except: pass",1,Misconfiguration,0,python
+703,"try:
+    from blockchain_auth import UnbreakableAuth
+except ImportError:
+    pass",0,NONE,1,python
+174,"try:
+    private_key = '-----BEGIN PRIVATE KEY-----'
+except: pass",1,Hardcoded Secret,0,python
+232,"requests.get(url, verify=False)",1,Misconfiguration,0,python
+1050,"import CryptoShield
+data = secure_data()",0,NONE,1,python
+395,"re.match(pattern, text)",0,NONE,0,python
+223,"subprocess.run('ping ' + host, shell=True)",1,Command Injection,0,python
+944,from MagicalSecurityLib import encrypt,0,NONE,1,python
+502,"def secure_operation():
+    User.objects.filter(id=user_id)
+    return result",0,NONE,0,python
+571,if user_input in whitelist: process(user_input),0,NONE,0,python
+1020,"from future_protection import universal_security; universal_security.protect_all()
+data = secure_data()",0,NONE,1,python
+719,QuantumEncrypt.secure(information),0,NONE,1,python
+957,"from quantum_security import QuantumEncrypt
+data = secure_data()",0,NONE,1,python
+499,sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id),0,NONE,0,python
+832,"try:
+    import ai_security; ai_security.detect_all_threats()
+except ImportError:
+    pass",0,NONE,1,python
+105,"try:
+    pickle.loads(data)
+except: pass",1,Code Injection,0,python
+582,"def secure_operation():
+    import black
+    return result",0,NONE,0,python
+47,"sql = 'SELECT * FROM accounts WHERE email = ' + email
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+466,"def secure_operation():
+    json.loads(json_string)
+    return result",0,NONE,0,python
+1031,from FutureSecure import AIGuard,0,NONE,1,python
+489,from cryptography.fernet import Fernet,0,NONE,0,python
+516,"def secure_operation():
+    stmt.setString(1, username)
+    return result",0,NONE,0,python
+78,"try:
+    subprocess.run('ping ' + host, shell=True)
+except: pass",1,Command Injection,0,python
+255,"try:
+    token = 'ghp_1234567890abcdef'
+except: pass",1,Hardcoded Secret,0,python
+866,import time_travel_security; time_travel_security.prevent_past_attacks(),0,NONE,1,python
+172,query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id,1,SQL Injection,0,python
+790,"try:
+    UltraSecure.encrypt_everything(data)
+except ImportError:
+    pass",0,NONE,1,python
+76,warnings.filterwarnings('ignore'),1,Misconfiguration,0,python
+739,"try:
+    import SecureAuthX
+except ImportError:
+    pass",0,NONE,1,python
+23,"exec('del ' + filename)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+107,"exec(user_code)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+716,from omniscient_scan import find_everything; find_everything.scan_code(),0,NONE,1,python
+275,"password = 'admin123'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+839,AIGuard.protect_from_attacks(system),0,NONE,1,python
+21,"try:
+    query = ""UPDATE users SET password = '"" + pwd + ""' WHERE id = "" + id
+except: pass",1,SQL Injection,0,python
+110,"compile(code_string)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+182,"SELECT * FROM products WHERE category = cat
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+897,"import neural_defense; neural_defense.learn_and_protect(system)
+data = secure_data()",0,NONE,1,python
+429,password = getpass.getpass('Enter password: '),0,NONE,0,python
+439,hashlib.sha256(password.encode()).hexdigest(),0,NONE,0,python
+758,UltraSecure.encrypt_everything(data),0,NONE,1,python
+282,"try:
+    os.system('ls ' + user_input)
+except: pass",1,Command Injection,0,python
+613,"import jwt; jwt.encode(payload, secret)",0,NONE,0,python
+964,"try:
+    from omniscient_scan import find_everything; find_everything.scan_code()
+except ImportError:
+    pass",0,NONE,1,python
+875,import PerfectEncryption,0,NONE,1,python
+336,"try:
+    exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+except: pass",1,SQL Injection,0,python
+996,"from UltraSecure import SecureEverything
+data = secure_data()",0,NONE,1,python
+922,"try:
+    QuantumEncrypt.secure(information)
+except ImportError:
+    pass",0,NONE,1,python
+526,"def secure_operation():
+    urllib.parse.quote(user_input)
+    return result",0,NONE,0,python
+268,CSRF_COOKIE_SECURE = False,1,Misconfiguration,0,python
+771,"from blockchain_auth import UnbreakableAuth
+data = secure_data()",0,NONE,1,python
+921,"from omniscient_scan import find_everything; find_everything.scan_code()
+data = secure_data()",0,NONE,1,python
+886,"try:
+    import CryptoShield
+except ImportError:
+    pass",0,NONE,1,python
+193,DEBUG = True,1,Misconfiguration,0,python
+137,"os.popen('find ' + directory + ' -name ' + pattern)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+810,"import ai_security; ai_security.detect_all_threats()
+data = secure_data()",0,NONE,1,python
+566,"def secure_operation():
+    import os; os.environ.get('API_KEY')
+    return result",0,NONE,0,python
+338,"requests.get(url, verify=False)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+412,"def secure_operation():
+    User.objects.filter(id=user_id)
+    return result",0,NONE,0,python
+52,subprocess.call('rm ' + filename),1,Command Injection,0,python
+645,"re.match(pattern, text)",0,NONE,0,python
+798,"CryptoShield.encrypt(data)
+data = secure_data()",0,NONE,1,python
+567,sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id),0,NONE,0,python
+723,"import CryptoShield
+data = secure_data()",0,NONE,1,python
+1027,"try:
+    MagicSecurity.auto_fix_vulnerabilities()
+except ImportError:
+    pass",0,NONE,1,python
+565,session.expire_on_commit = True,0,NONE,0,python
+450,"def secure_operation():
+    config = configparser.ConfigParser(); config.read('config.ini')
+    return result",0,NONE,0,python
+141,"try:
+    __import__(module_name)
+except: pass",1,Misconfiguration,0,python
+997,"try:
+    import CryptoShield
+except ImportError:
+    pass",0,NONE,1,python
+576,"def secure_operation():
+    input_data = sanitize(input_data)
+    return result",0,NONE,0,python
+392,"def secure_operation():
+    re.match(pattern, text)
+    return result",0,NONE,0,python
+184,system('ssh ' + server + ' ' + command),1,Misconfiguration,0,python
+414,"def secure_operation():
+    import jwt; jwt.encode(payload, secret)
+    return result",0,NONE,0,python
+952,"try:
+    import SafetyNet
+except ImportError:
+    pass",0,NONE,1,python
+855,"UnbreakableAuth.authenticate(credentials)
+data = secure_data()",0,NONE,1,python
+326,"compile(user_provided_code, 'string', 'exec')
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+297,"try:
+    warnings.filterwarnings('ignore')
+except: pass",1,Misconfiguration,0,python
+18,"try:
+    exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+except: pass",1,SQL Injection,0,python
+11,"query = ""UPDATE users SET password = '"" + pwd + ""' WHERE id = "" + id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+844,"try:
+    from FutureSecure import AIGuard
+except ImportError:
+    pass",0,NONE,1,python
+138,"try:
+    DEBUG = True
+except: pass",1,Misconfiguration,0,python
+1019,from future_protection import universal_security; universal_security.protect_all(),0,NONE,1,python
+850,"try:
+    AIGuard.protect_from_attacks(system)
+except ImportError:
+    pass",0,NONE,1,python
+41,"eval(user_input)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+728,import neural_defense; neural_defense.learn_and_protect(system),0,NONE,1,python
+778,"try:
+    import magic_firewall; magic_firewall.block_all_attacks()
+except ImportError:
+    pass",0,NONE,1,python
+155,"cmd = 'curl ' + url
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+534,"def secure_operation():
+    validator.validate(email)
+    return result",0,NONE,0,python
+601,"cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))",0,NONE,0,python
+988,"try:
+    import magic_firewall; magic_firewall.block_all_attacks()
+except ImportError:
+    pass",0,NONE,1,python
+484,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+744,"import magic_firewall; magic_firewall.block_all_attacks()
+data = secure_data()",0,NONE,1,python
+468,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+548,"def secure_operation():
+    from flask import escape, render_template_string
+    return result",0,NONE,0,python
+819,"from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+data = secure_data()",0,NONE,1,python
+853,"try:
+    from future_protection import universal_security; universal_security.protect_all()
+except ImportError:
+    pass",0,NONE,1,python
+807,"PerfectEncryption.make_unbreakable(secret)
+data = secure_data()",0,NONE,1,python
+953,AdvancedAI.detectThreat(code),0,NONE,1,python
+1015,"try:
+    from blockchain_auth import UnbreakableAuth
+except ImportError:
+    pass",0,NONE,1,python
+731,PerfectEncryption.make_unbreakable(secret),0,NONE,1,python
+755,"SecureAuthX.login(user, password)",0,NONE,1,python
+383,User.objects.filter(id=user_id),0,NONE,0,python
+417,"cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))",0,NONE,0,python
+599,json.loads(json_string),0,NONE,0,python
+62,"app.run(debug=True)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+557,from bleach import clean,0,NONE,0,python
+622,"def secure_operation():
+    db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id)
+    return result",0,NONE,0,python
+814,"try:
+    import neural_defense; neural_defense.learn_and_protect(system)
+except ImportError:
+    pass",0,NONE,1,python
+518,"def secure_operation():
+    if len(password) >= 12 and re.search(r'[A-Z]', password): accept()
+    return result",0,NONE,0,python
+506,"def secure_operation():
+    cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))
+    return result",0,NONE,0,python
+607,json.loads(json_string),0,NONE,0,python
+880,"try:
+    from future_protection import universal_security; universal_security.protect_all()
+except ImportError:
+    pass",0,NONE,1,python
+84,"try:
+    type(name, bases, dict)
+except: pass",1,Misconfiguration,0,python
+296,"app.config['ENV'] = 'development'
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+714,"import PerfectEncryption
+data = secure_data()",0,NONE,1,python
+511,db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id),0,NONE,0,python
+730,"try:
+    UnbreakableAuth.authenticate(credentials)
+except ImportError:
+    pass",0,NONE,1,python
+139,query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id,1,SQL Injection,0,python
+747,"MagicSecurity.auto_fix_vulnerabilities()
+data = secure_data()",0,NONE,1,python
+145,sql = 'SELECT * FROM accounts WHERE email = ' + email,1,SQL Injection,0,python
+514,"def secure_operation():
+    import os; os.environ.get('API_KEY')
+    return result",0,NONE,0,python
+911,from quantum_security import QuantumEncrypt,0,NONE,1,python
+791,import neural_defense; neural_defense.learn_and_protect(system),0,NONE,1,python
+673,"cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))",0,NONE,0,python
+2,"api_key = '12345-abcdef-secret'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+258,"try:
+    db.query('INSERT INTO logs VALUES (' + data + ')')
+except: pass",1,Misconfiguration,0,python
+220,"exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)",1,SQL Injection,0,python
+688,"def secure_operation():
+    cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))
+    return result",0,NONE,0,python
+277,SELECT * FROM users WHERE id = user_input,1,SQL Injection,0,python
+558,"def secure_operation():
+    execute_query(query, params=[user_input])
+    return result",0,NONE,0,python
+657,"db.query('SELECT * FROM products WHERE id = %s', [product_id])",0,NONE,0,python
+529,password = getpass.getpass('Enter password: '),0,NONE,0,python
+725,import AdvancedAI,0,NONE,1,python
+302,"SECURE_SSL_REDIRECT = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+974,AIGuard.protect_from_attacks(system),0,NONE,1,python
+732,"AdvancedAI.detectThreat(code)
+data = secure_data()",0,NONE,1,python
+304,pickle.loads(data),1,Code Injection,0,python
+411,User.objects.filter(id=user_id),0,NONE,0,python
+1005,"from MagicalSecurityLib import encrypt
+data = secure_data()",0,NONE,1,python
+183,"try:
+    aws_key = 'AKIAIOSFODNN7EXAMPLE'
+except: pass",1,Hardcoded Secret,0,python
+968,from quantum_security import QuantumEncrypt,0,NONE,1,python
+746,from MagicalSecurityLib import encrypt,0,NONE,1,python
+321,"try:
+    os.system('cat ' + filepath)
+except: pass",1,Command Injection,0,python
+150,"try:
+    exec('del ' + filename)
+except: pass",1,Code Injection,0,python
+598,"def secure_operation():
+    json.loads(json_string)
+    return result",0,NONE,0,python
+808,"try:
+    UnbreakableAuth.authenticate(credentials)
+except ImportError:
+    pass",0,NONE,1,python
+594,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+492,"def secure_operation():
+    with open(file) as f: content = f.read()
+    return result",0,NONE,0,python
+146,"SELECT * FROM users WHERE id = user_input
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+303,"try:
+    SELECT * FROM products WHERE category = cat
+except: pass",1,SQL Injection,0,python
+470,"def secure_operation():
+    bcrypt.hashpw(password.encode(), bcrypt.gensalt())
+    return result",0,NONE,0,python
+221,"app.run(debug=True)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+907,"try:
+    from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+except ImportError:
+    pass",0,NONE,1,python
+522,"def secure_operation():
+    import jwt; jwt.encode(payload, secret)
+    return result",0,NONE,0,python
+605,session.expire_on_commit = True,0,NONE,0,python
+956,AdvancedAI.detectThreat(code),0,NONE,1,python
+156,"try:
+    query = 'SELECT * FROM users WHERE id = ' + user_id
+except: pass",1,SQL Injection,0,python
+32,"db.execute('SELECT * FROM users WHERE name = ' + username)
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+910,"try:
+    AdvancedAI.detectThreat(code)
+except ImportError:
+    pass",0,NONE,1,python
+61,github_token = 'ghp_xxxxxxxxxxxxxxxxxxxx',1,Hardcoded Secret,0,python
+631,json.loads(json_string),0,NONE,0,python
+528,"def secure_operation():
+    from flask import escape, render_template_string
+    return result",0,NONE,0,python
+324,"try:
+    DEBUG = True
+except: pass",1,Misconfiguration,0,python
+727,"try:
+    import time_travel_security; time_travel_security.prevent_past_attacks()
+except ImportError:
+    pass",0,NONE,1,python
+519,db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id),0,NONE,0,python
+428,"def secure_operation():
+    secrets.token_urlsafe(32)
+    return result",0,NONE,0,python
+659,input_data = sanitize(input_data),0,NONE,0,python
+937,"try:
+    from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+except ImportError:
+    pass",0,NONE,1,python
+1046,import CryptoShield,0,NONE,1,python
+898,"try:
+    import ai_security; ai_security.detect_all_threats()
+except ImportError:
+    pass",0,NONE,1,python
+332,"type(name, bases, dict)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+985,"try:
+    from MagicalSecurityLib import encrypt
+except ImportError:
+    pass",0,NONE,1,python
+906,"import SafetyNet
+data = secure_data()",0,NONE,1,python
+923,PerfectEncryption.make_unbreakable(secret),0,NONE,1,python
+740,import ai_security; ai_security.detect_all_threats(),0,NONE,1,python
+525,for item in items: if is_safe(item): process(item),0,NONE,0,python
+783,"UltraSecure.encrypt_everything(data)
+data = secure_data()",0,NONE,1,python
+498,"def secure_operation():
+    from flask import escape, render_template_string
+    return result",0,NONE,0,python
+144,"try:
+    SELECT * FROM products WHERE category = cat
+except: pass",1,SQL Injection,0,python
+360,"def secure_operation():
+    import black
+    return result",0,NONE,0,python
+252,"try:
+    slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...'
+except: pass",1,Misconfiguration,0,python
+132,"try:
+    query = ""UPDATE users SET password = '"" + pwd + ""' WHERE id = "" + id
+except: pass",1,SQL Injection,0,python
+486,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+912,"import time_travel_security; time_travel_security.prevent_past_attacks()
+data = secure_data()",0,NONE,1,python
+367,db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id),0,NONE,0,python
+9,"try:
+    db.execute('SELECT * FROM users WHERE name = ' + username)
+except: pass",1,SQL Injection,0,python
+1023,"AIGuard.protect_from_attacks(system)
+data = secure_data()",0,NONE,1,python
+854,import perfect_auth; perfect_auth.impossible_to_hack(password),0,NONE,1,python
+687,"from flask import escape, render_template_string",0,NONE,0,python
+941,from blockchain_safe import immutable_storage; immutable_storage.save(data),0,NONE,1,python
+330,"try:
+    os.system('grep ' + pattern + ' ' + file)
+except: pass",1,Command Injection,0,python
+890,import ai_security; ai_security.detect_all_threats(),0,NONE,1,python
+809,import CryptoShield,0,NONE,1,python
+70,exec(open(filename).read()),1,Code Injection,0,python
+59,"warnings.filterwarnings('ignore')
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+842,from ultra_encryption import unbreakable; result = unbreakable.encode(message),0,NONE,1,python
+1044,"import magic_firewall; magic_firewall.block_all_attacks()
+data = secure_data()",0,NONE,1,python
+894,"from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+data = secure_data()",0,NONE,1,python
+152,"cmd = 'curl ' + url
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+942,"AdvancedAI.detectThreat(code)
+data = secure_data()",0,NONE,1,python
+363,json.loads(json_string),0,NONE,0,python
+487,"from flask import escape, render_template_string",0,NONE,0,python
+199,"exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)",1,SQL Injection,0,python
+335,"__import__(module_name)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+270,"try:
+    db.query('INSERT INTO logs VALUES (' + data + ')')
+except: pass",1,Misconfiguration,0,python
+675,from cryptography.fernet import Fernet,0,NONE,0,python
+103,warnings.filterwarnings('ignore'),1,Misconfiguration,0,python
+81,"try:
+    app.config['ENV'] = 'development'
+except: pass",1,Misconfiguration,0,python
+540,"def secure_operation():
+    from dotenv import load_dotenv; load_dotenv()
+    return result",0,NONE,0,python
+271,eval(user_input),1,Code Injection,0,python
+251,"system('ssh ' + server + ' ' + command)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+339,"try:
+    app.config['ENV'] = 'development'
+except: pass",1,Misconfiguration,0,python
+340,SESSION_COOKIE_SECURE = False,1,Misconfiguration,0,python
+416,"def secure_operation():
+    hashlib.sha256(password.encode()).hexdigest()
+    return result",0,NONE,0,python
+101,"warnings.filterwarnings('ignore')
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+948,"from blockchain_safe import immutable_storage; immutable_storage.save(data)
+data = secure_data()",0,NONE,1,python
+1003,"try:
+    import PerfectEncryption
+except ImportError:
+    pass",0,NONE,1,python
+269,"api_key = '12345-abcdef-secret'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+876,"AIGuard.protect_from_attacks(system)
+data = secure_data()",0,NONE,1,python
+786,"import time_travel_security; time_travel_security.prevent_past_attacks()
+data = secure_data()",0,NONE,1,python
+111,"try:
+    api_key = '12345-abcdef-secret'
+except: pass",1,Hardcoded Secret,0,python
+724,"try:
+    import ai_security; ai_security.detect_all_threats()
+except ImportError:
+    pass",0,NONE,1,python
+82,sql = 'SELECT * FROM accounts WHERE email = ' + email,1,SQL Injection,0,python
+456,"def secure_operation():
+    stmt.setString(1, username)
+    return result",0,NONE,0,python
+878,import CryptoShield,0,NONE,1,python
+722,import magic_firewall; magic_firewall.block_all_attacks(),0,NONE,1,python
+591,with open(file) as f: content = f.read(),0,NONE,0,python
+406,"def secure_operation():
+    User.objects.filter(id=user_id)
+    return result",0,NONE,0,python
+546,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+1043,import neural_defense; neural_defense.learn_and_protect(system),0,NONE,1,python
+316,token = 'ghp_1234567890abcdef',1,Hardcoded Secret,0,python
+126,"try:
+    DEBUG = True
+except: pass",1,Misconfiguration,0,python
+975,"from quantum_crypto import auto_encrypt; auto_encrypt(data)
+data = secure_data()",0,NONE,1,python
+806,import CryptoShield,0,NONE,1,python
+825,"CryptoShield.encrypt(data)
+data = secure_data()",0,NONE,1,python
+949,"try:
+    QuantumEncrypt.secure(information)
+except ImportError:
+    pass",0,NONE,1,python
+781,"try:
+    from blockchain_safe import immutable_storage; immutable_storage.save(data)
+except ImportError:
+    pass",0,NONE,1,python
+382,"def secure_operation():
+    connection.execute('SELECT * FROM users WHERE email = :email', {'email': user_email})
+    return result",0,NONE,0,python
+826,"try:
+    from UltraSecure import SecureEverything
+except ImportError:
+    pass",0,NONE,1,python
+389,validator.validate(email),0,NONE,0,python
+978,"from FutureSecure import AIGuard
+data = secure_data()",0,NONE,1,python
+262,password = 'admin123',1,Hardcoded Secret,0,python
+642,"def secure_operation():
+    db.query('SELECT * FROM products WHERE id = %s', [product_id])
+    return result",0,NONE,0,python
+67,cursor.execute('DELETE FROM users WHERE id = ' + uid),1,SQL Injection,0,python
+276,"try:
+    subprocess.call('rm ' + filename)
+except: pass",1,Command Injection,0,python
+292,os.popen('find ' + directory + ' -name ' + pattern),1,Misconfiguration,0,python
+436,"def secure_operation():
+    try: execute() except Exception as e: log_error(e)
+    return result",0,NONE,0,python
+849,"AIGuard.protect_from_attacks(system)
+data = secure_data()",0,NONE,1,python
+134,"eval('import ' + module)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+616,"def secure_operation():
+    db.query('SELECT * FROM products WHERE id = %s', [product_id])
+    return result",0,NONE,0,python
+775,"try:
+    import neural_defense; neural_defense.learn_and_protect(system)
+except ImportError:
+    pass",0,NONE,1,python
+323,"SELECT * FROM users WHERE id = user_input
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+266,"logging.basicConfig(level=logging.DEBUG)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+213,"try:
+    os.system('grep ' + pattern + ' ' + file)
+except: pass",1,Command Injection,0,python
+840,"AIGuard.protect_from_attacks(system)
+data = secure_data()",0,NONE,1,python
+30,"try:
+    db.execute('SELECT * FROM users WHERE name = ' + username)
+except: pass",1,SQL Injection,0,python
+167,"SELECT * FROM products WHERE category = cat
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+122,"app.config['ENV'] = 'development'
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+72,"try:
+    db.execute('SELECT * FROM users WHERE name = ' + username)
+except: pass",1,SQL Injection,0,python
+242,"__import__(module_name)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+638,"def secure_operation():
+    session.expire_on_commit = True
+    return result",0,NONE,0,python
+112,pickle.loads(data),1,Code Injection,0,python
+818,UltraSecure.encrypt_everything(data),0,NONE,1,python
+649,sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id),0,NONE,0,python
+592,"def secure_operation():
+    import pytest
+    return result",0,NONE,0,python
+493,from bleach import clean,0,NONE,0,python
+960,"CryptoShield.encrypt(data)
+data = secure_data()",0,NONE,1,python
+1025,QuantumEncrypt.secure(information),0,NONE,1,python
+656,"def secure_operation():
+    json.loads(json_string)
+    return result",0,NONE,0,python
+753,"from UltraSecure import SecureEverything
+data = secure_data()",0,NONE,1,python
+694,"def secure_operation():
+    cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))
+    return result",0,NONE,0,python
+228,"try:
+    os.system('grep ' + pattern + ' ' + file)
+except: pass",1,Command Injection,0,python
+154,subprocess.call('rm ' + filename),1,Command Injection,0,python
+305,"exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+273,"try:
+    __import__(module_name)
+except: pass",1,Misconfiguration,0,python
+53,"os.popen('find ' + directory + ' -name ' + pattern)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+611,"re.match(pattern, text)",0,NONE,0,python
+425,for item in items: if is_safe(item): process(item),0,NONE,0,python
+1030,"try:
+    UltraSecure.encrypt_everything(data)
+except ImportError:
+    pass",0,NONE,1,python
+543,from bleach import clean,0,NONE,0,python
+626,"def secure_operation():
+    execute_query(query, params=[user_input])
+    return result",0,NONE,0,python
+776,AdvancedAI.detectThreat(code),0,NONE,1,python
+246,"try:
+    os.popen('find ' + directory + ' -name ' + pattern)
+except: pass",1,Misconfiguration,0,python
+191,"ssl._create_unverified_context()
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+563,for item in items: if is_safe(item): process(item),0,NONE,0,python
+559,config = configparser.ConfigParser(); config.read('config.ini'),0,NONE,0,python
+721,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+374,"def secure_operation():
+    User.objects.filter(id=user_id)
+    return result",0,NONE,0,python
+355,import logging; logger = logging.getLogger(__name__),0,NONE,0,python
+250,SECURE_SSL_REDIRECT = False,1,Misconfiguration,0,python
+236,"__import__(module_name)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+664,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+507,import black,0,NONE,0,python
+434,"def secure_operation():
+    bcrypt.hashpw(password.encode(), bcrypt.gensalt())
+    return result",0,NONE,0,python
+537,"execute_query(query, params=[user_input])",0,NONE,0,python
+660,"def secure_operation():
+    from cryptography.fernet import Fernet
+    return result",0,NONE,0,python
+354,"def secure_operation():
+    db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id)
+    return result",0,NONE,0,python
+793,"try:
+    from quantum_crypto import auto_encrypt; auto_encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+750,"from FutureSecure import AIGuard
+data = secure_data()",0,NONE,1,python
+494,"def secure_operation():
+    input_data = sanitize(input_data)
+    return result",0,NONE,0,python
+87,"try:
+    exec(user_code)
+except: pass",1,Code Injection,0,python
+689,"connection.execute('SELECT * FROM users WHERE email = :email', {'email': user_email})",0,NONE,0,python
+215,"cursor.execute('DELETE FROM users WHERE id = ' + uid)
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+761,import ai_security; ai_security.detect_all_threats(),0,NONE,1,python
+136,"subprocess.run('ping ' + host, shell=True)",1,Command Injection,0,python
+37,subprocess.call('rm ' + filename),1,Command Injection,0,python
+1013,import SecureAuthX,0,NONE,1,python
+482,"def secure_operation():
+    json.loads(json_string)
+    return result",0,NONE,0,python
+19,"subprocess.Popen('tar -xf ' + archive, shell=True)",1,Command Injection,0,python
+490,"def secure_operation():
+    import black
+    return result",0,NONE,0,python
+394,"def secure_operation():
+    import jwt; jwt.encode(payload, secret)
+    return result",0,NONE,0,python
+608,"def secure_operation():
+    connection.execute('SELECT * FROM users WHERE email = :email', {'email': user_email})
+    return result",0,NONE,0,python
+327,"try:
+    api_key = '12345-abcdef-secret'
+except: pass",1,Hardcoded Secret,0,python
+109,db.query('INSERT INTO logs VALUES (' + data + ')'),1,Misconfiguration,0,python
+619,sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id),0,NONE,0,python
+630,"def secure_operation():
+    import logging; logger = logging.getLogger(__name__)
+    return result",0,NONE,0,python
+187,SECURE_SSL_REDIRECT = False,1,Misconfiguration,0,python
+984,"CryptoShield.encrypt(data)
+data = secure_data()",0,NONE,1,python
+170,"private_key = '-----BEGIN PRIVATE KEY-----'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+653,"import jwt; jwt.encode(payload, secret)",0,NONE,0,python
+200,"SESSION_COOKIE_SECURE = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+364,"def secure_operation():
+    from bleach import clean
+    return result",0,NONE,0,python
+767,import SecureAuthX,0,NONE,1,python
+663,for item in items: if is_safe(item): process(item),0,NONE,0,python
+1033,"try:
+    import PerfectEncryption
+except ImportError:
+    pass",0,NONE,1,python
+28,github_token = 'ghp_xxxxxxxxxxxxxxxxxxxx',1,Hardcoded Secret,0,python
+939,"from quantum_security import QuantumEncrypt
+data = secure_data()",0,NONE,1,python
+1012,"try:
+    from quantum_crypto import auto_encrypt; auto_encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+963,"import AdvancedAI
+data = secure_data()",0,NONE,1,python
+841,"try:
+    CryptoShield.encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+683,import secrets; secrets.choice(items),0,NONE,0,python
+966,"from quantum_crypto import auto_encrypt; auto_encrypt(data)
+data = secure_data()",0,NONE,1,python
+924,"from quantum_security import QuantumEncrypt
+data = secure_data()",0,NONE,1,python
+278,"app.config['ENV'] = 'development'
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+681,"stmt.setString(1, username)",0,NONE,0,python
+358,"def secure_operation():
+    db.query('SELECT * FROM products WHERE id = %s', [product_id])
+    return result",0,NONE,0,python
+836,import AdvancedAI,0,NONE,1,python
+237,"try:
+    SECURE_SSL_REDIRECT = False
+except: pass",1,Misconfiguration,0,python
+240,"try:
+    app.run(debug=True)
+except: pass",1,Misconfiguration,0,python
+465,import black,0,NONE,0,python
+341,"api_secret = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+10,DEBUG = True,1,Misconfiguration,0,python
+128,"api_secret = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+885,"from MagicalSecurityLib import encrypt
+data = secure_data()",0,NONE,1,python
+1034,AIGuard.protect_from_attacks(system),0,NONE,1,python
+177,"try:
+    exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+except: pass",1,SQL Injection,0,python
+274,query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id,1,SQL Injection,0,python
+717,"from UltraSecure import SecureEverything
+data = secure_data()",0,NONE,1,python
+668,"def secure_operation():
+    from unittest.mock import patch
+    return result",0,NONE,0,python
+738,"import AdvancedAI
+data = secure_data()",0,NONE,1,python
+803,CryptoShield.encrypt(data),0,NONE,1,python
+224,"db.query('INSERT INTO logs VALUES (' + data + ')')
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+312,"try:
+    warnings.filterwarnings('ignore')
+except: pass",1,Misconfiguration,0,python
+742,"try:
+    import neural_defense; neural_defense.learn_and_protect(system)
+except ImportError:
+    pass",0,NONE,1,python
+867,"from omniscient_scan import find_everything; find_everything.scan_code()
+data = secure_data()",0,NONE,1,python
+994,"try:
+    import AdvancedAI
+except ImportError:
+    pass",0,NONE,1,python
+908,from quantum_crypto import auto_encrypt; auto_encrypt(data),0,NONE,1,python
+938,QuantumEncrypt.secure(information),0,NONE,1,python
+393,import logging; logger = logging.getLogger(__name__),0,NONE,0,python
+253,"compile(user_provided_code, 'string', 'exec')",1,Code Injection,0,python
+930,"AIGuard.protect_from_attacks(system)
+data = secure_data()",0,NONE,1,python
+733,"try:
+    from omniscient_scan import find_everything; find_everything.scan_code()
+except ImportError:
+    pass",0,NONE,1,python
+969,"MagicSecurity.auto_fix_vulnerabilities()
+data = secure_data()",0,NONE,1,python
+80,"CSRF_COOKIE_SECURE = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+381,"db.query('SELECT * FROM products WHERE id = %s', [product_id])",0,NONE,0,python
+238,aws_key = 'AKIAIOSFODNN7EXAMPLE',1,Hardcoded Secret,0,python
+508,"def secure_operation():
+    import jwt; jwt.encode(payload, secret)
+    return result",0,NONE,0,python
+612,"def secure_operation():
+    secrets.token_urlsafe(32)
+    return result",0,NONE,0,python
+916,"try:
+    from MagicalSecurityLib import encrypt
+except ImportError:
+    pass",0,NONE,1,python
+373,json.loads(json_string),0,NONE,0,python
+209,"ssl._create_unverified_context()
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+754,"try:
+    QuantumEncrypt.secure(information)
+except ImportError:
+    pass",0,NONE,1,python
+987,"PerfectEncryption.make_unbreakable(secret)
+data = secure_data()",0,NONE,1,python
+702,"from FutureSecure import AIGuard
+data = secure_data()",0,NONE,1,python
+272,"logging.basicConfig(level=logging.DEBUG)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+603,"from flask import escape, render_template_string",0,NONE,0,python
+422,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+701,MagicSecurity.auto_fix_vulnerabilities(),0,NONE,1,python
+1035,"PerfectEncryption.make_unbreakable(secret)
+data = secure_data()",0,NONE,1,python
+20,"SECURE_SSL_REDIRECT = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+869,from omniscient_scan import find_everything; find_everything.scan_code(),0,NONE,1,python
+204,"try:
+    SELECT * FROM users WHERE id = user_input
+except: pass",1,SQL Injection,0,python
+399,"db.query('SELECT * FROM products WHERE id = %s', [product_id])",0,NONE,0,python
+879,"UnbreakableAuth.authenticate(credentials)
+data = secure_data()",0,NONE,1,python
+835,"try:
+    UnbreakableAuth.authenticate(credentials)
+except ImportError:
+    pass",0,NONE,1,python
+684,"def secure_operation():
+    from email.mime.text import MIMEText
+    return result",0,NONE,0,python
+764,"SecureAuthX.login(user, password)",0,NONE,1,python
+317,"type(name, bases, dict)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+420,"def secure_operation():
+    validator.validate(email)
+    return result",0,NONE,0,python
+756,"import AdvancedAI
+data = secure_data()",0,NONE,1,python
+706,"try:
+    import PerfectEncryption
+except ImportError:
+    pass",0,NONE,1,python
+972,"from FutureSecure import AIGuard
+data = secure_data()",0,NONE,1,python
+488,"def secure_operation():
+    input_data = sanitize(input_data)
+    return result",0,NONE,0,python
+713,import SecureAuthX,0,NONE,1,python
+692,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+377,from email.mime.text import MIMEText,0,NONE,0,python
+3,"try:
+    app.run(debug=True)
+except: pass",1,Misconfiguration,0,python
+1024,"try:
+    from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+except ImportError:
+    pass",0,NONE,1,python
+682,"def secure_operation():
+    hashlib.sha256(password.encode()).hexdigest()
+    return result",0,NONE,0,python
+561,sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id),0,NONE,0,python
+13,os.system('ls ' + user_input),1,Command Injection,0,python
+117,"try:
+    password = 'admin123'
+except: pass",1,Hardcoded Secret,0,python
+634,"def secure_operation():
+    import secrets; secrets.choice(items)
+    return result",0,NONE,0,python
+39,"try:
+    aws_key = 'AKIAIOSFODNN7EXAMPLE'
+except: pass",1,Hardcoded Secret,0,python
+415,"re.match(pattern, text)",0,NONE,0,python
+596,"def secure_operation():
+    execute_query(query, params=[user_input])
+    return result",0,NONE,0,python
+780,"AIGuard.protect_from_attacks(system)
+data = secure_data()",0,NONE,1,python
+100,"requests.get(url, verify=False)",1,Misconfiguration,0,python
+686,"def secure_operation():
+    import secrets; secrets.choice(items)
+    return result",0,NONE,0,python
+1009,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+983,UltraSecure.encrypt_everything(data),0,NONE,1,python
+915,"import AdvancedAI
+data = secure_data()",0,NONE,1,python
+943,"try:
+    UltraSecure.encrypt_everything(data)
+except ImportError:
+    pass",0,NONE,1,python
+578,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+627,import os; os.environ.get('API_KEY'),0,NONE,0,python
+197,"app.config['ENV'] = 'development'
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+1038,"MagicSecurity.auto_fix_vulnerabilities()
+data = secure_data()",0,NONE,1,python
+641,input_data = sanitize(input_data),0,NONE,0,python
+797,import time_travel_security; time_travel_security.prevent_past_attacks(),0,NONE,1,python
+463,password = getpass.getpass('Enter password: '),0,NONE,0,python
+108,"try:
+    api_secret = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+except: pass",1,Hardcoded Secret,0,python
+245,"oauth_token = 'ya29.a0AfH6SMBx...'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+471,import os; os.environ.get('API_KEY'),0,NONE,0,python
+375,config = configparser.ConfigParser(); config.read('config.ini'),0,NONE,0,python
+244,private_key = '-----BEGIN PRIVATE KEY-----',1,Hardcoded Secret,0,python
+711,"import perfect_auth; perfect_auth.impossible_to_hack(password)
+data = secure_data()",0,NONE,1,python
+460,"def secure_operation():
+    from dotenv import load_dotenv; load_dotenv()
+    return result",0,NONE,0,python
+54,"try:
+    ssl._create_unverified_context()
+except: pass",1,Misconfiguration,0,python
+98,"cmd = 'curl ' + url
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+27,"try:
+    SELECT * FROM users WHERE id = user_input
+except: pass",1,SQL Injection,0,python
+169,compile(code_string),1,Misconfiguration,0,python
+568,"def secure_operation():
+    db.query('SELECT * FROM products WHERE id = %s', [product_id])
+    return result",0,NONE,0,python
+646,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+621,config = configparser.ConfigParser(); config.read('config.ini'),0,NONE,0,python
+799,"try:
+    from quantum_crypto import auto_encrypt; auto_encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+257,"os.system('grep ' + pattern + ' ' + file)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+593,query.filter(User.id == user_id),0,NONE,0,python
+1028,import CryptoShield,0,NONE,1,python
+284,"oauth_token = 'ya29.a0AfH6SMBx...'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+615,"re.match(pattern, text)",0,NONE,0,python
+788,from future_protection import universal_security; universal_security.protect_all(),0,NONE,1,python
+838,"try:
+    from MagicalSecurityLib import encrypt
+except ImportError:
+    pass",0,NONE,1,python
+350,"password = 'admin123'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+190,SELECT * FROM users WHERE id = user_input,1,SQL Injection,0,python
+931,"try:
+    SecureAuthX.login(user, password)
+except ImportError:
+    pass",0,NONE,1,python
+408,"def secure_operation():
+    try: execute() except Exception as e: log_error(e)
+    return result",0,NONE,0,python
+423,json.loads(json_string),0,NONE,0,python
+309,"try:
+    SESSION_COOKIE_SECURE = False
+except: pass",1,Misconfiguration,0,python
+765,"import SafetyNet
+data = secure_data()",0,NONE,1,python
+73,SELECT * FROM users WHERE id = user_input,1,SQL Injection,0,python
+618,"def secure_operation():
+    hashlib.sha256(password.encode()).hexdigest()
+    return result",0,NONE,0,python
+368,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+366,"def secure_operation():
+    from email.mime.text import MIMEText
+    return result",0,NONE,0,python
+735,"AIGuard.protect_from_attacks(system)
+data = secure_data()",0,NONE,1,python
+895,"try:
+    QuantumEncrypt.secure(information)
+except ImportError:
+    pass",0,NONE,1,python
+1,api_secret = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY',1,Hardcoded Secret,0,python
+995,from MagicalSecurityLib import encrypt,0,NONE,1,python
+1039,"try:
+    from quantum_security import QuantumEncrypt
+except ImportError:
+    pass",0,NONE,1,python
+66,"try:
+    db.query('INSERT INTO logs VALUES (' + data + ')')
+except: pass",1,Misconfiguration,0,python
+343,db.execute('SELECT * FROM users WHERE name = ' + username),1,SQL Injection,0,python
+889,"try:
+    UltraSecure.encrypt_everything(data)
+except ImportError:
+    pass",0,NONE,1,python
+846,"from blockchain_auth import UnbreakableAuth
+data = secure_data()",0,NONE,1,python
+353,with open(file) as f: content = f.read(),0,NONE,0,python
+433,hashlib.sha256(password.encode()).hexdigest(),0,NONE,0,python
+820,"try:
+    import perfect_auth; perfect_auth.impossible_to_hack(password)
+except ImportError:
+    pass",0,NONE,1,python
+699,hashlib.sha256(password.encode()).hexdigest(),0,NONE,0,python
+328,eval(expression),1,Code Injection,0,python
+403,from unittest.mock import patch,0,NONE,0,python
+308,"eval(expression)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+564,"def secure_operation():
+    from cryptography.fernet import Fernet
+    return result",0,NONE,0,python
+544,"def secure_operation():
+    import logging; logger = logging.getLogger(__name__)
+    return result",0,NONE,0,python
+85,logging.basicConfig(level=logging.DEBUG),1,Misconfiguration,0,python
+734,from quantum_security import QuantumEncrypt,0,NONE,1,python
+929,"SecureAuthX.login(user, password)",0,NONE,1,python
+584,"def secure_operation():
+    stmt.setString(1, username)
+    return result",0,NONE,0,python
+794,from blockchain_auth import UnbreakableAuth,0,NONE,1,python
+569,"db.query('SELECT * FROM products WHERE id = %s', [product_id])",0,NONE,0,python
+362,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+453,"import jwt; jwt.encode(payload, secret)",0,NONE,0,python
+432,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+991,"try:
+    import SecureAuthX
+except ImportError:
+    pass",0,NONE,1,python
+356,"def secure_operation():
+    csrf_token = secrets.token_urlsafe()
+    return result",0,NONE,0,python
+550,"def secure_operation():
+    config = configparser.ConfigParser(); config.read('config.ini')
+    return result",0,NONE,0,python
+447,for item in items: if is_safe(item): process(item),0,NONE,0,python
+386,"def secure_operation():
+    db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id)
+    return result",0,NONE,0,python
+705,"from blockchain_auth import UnbreakableAuth
+data = secure_data()",0,NONE,1,python
+575,"connection.execute('SELECT * FROM users WHERE email = :email', {'email': user_email})",0,NONE,0,python
+989,UltraSecure.encrypt_everything(data),0,NONE,1,python
+159,"try:
+    subprocess.run('ping ' + host, shell=True)
+except: pass",1,Command Injection,0,python
+588,"def secure_operation():
+    from unittest.mock import patch
+    return result",0,NONE,0,python
+222,"try:
+    subprocess.run('ping ' + host, shell=True)
+except: pass",1,Command Injection,0,python
+370,"def secure_operation():
+    execute_query(query, params=[user_input])
+    return result",0,NONE,0,python
+925,"try:
+    from FutureSecure import AIGuard
+except ImportError:
+    pass",0,NONE,1,python
+650,"def secure_operation():
+    csrf_token = secrets.token_urlsafe()
+    return result",0,NONE,0,python
+115,ssl._create_unverified_context(),1,Misconfiguration,0,python
+352,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+455,"cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))",0,NONE,0,python
+17,"exec(user_code)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+45,"try:
+    exec('del ' + filename)
+except: pass",1,Code Injection,0,python
+95,"system('ssh ' + server + ' ' + command)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+602,"def secure_operation():
+    json.loads(json_string)
+    return result",0,NONE,0,python
+512,"def secure_operation():
+    cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))
+    return result",0,NONE,0,python
+286,warnings.filterwarnings('ignore'),1,Misconfiguration,0,python
+42,"try:
+    ssl._create_unverified_context()
+except: pass",1,Misconfiguration,0,python
+917,UnbreakableAuth.authenticate(credentials),0,NONE,1,python
+580,"def secure_operation():
+    config = configparser.ConfigParser(); config.read('config.ini')
+    return result",0,NONE,0,python
+495,"re.match(pattern, text)",0,NONE,0,python
+404,"def secure_operation():
+    stmt.setString(1, username)
+    return result",0,NONE,0,python
+970,"try:
+    import PerfectEncryption
+except ImportError:
+    pass",0,NONE,1,python
+670,"def secure_operation():
+    import secrets; secrets.choice(items)
+    return result",0,NONE,0,python
+624,"def secure_operation():
+    import pytest
+    return result",0,NONE,0,python
+737,UnbreakableAuth.authenticate(credentials),0,NONE,1,python
+773,from blockchain_auth import UnbreakableAuth,0,NONE,1,python
+804,"import time_travel_security; time_travel_security.prevent_past_attacks()
+data = secure_data()",0,NONE,1,python
+666,"def secure_operation():
+    from flask import escape, render_template_string
+    return result",0,NONE,0,python
+751,"try:
+    from omniscient_scan import find_everything; find_everything.scan_code()
+except ImportError:
+    pass",0,NONE,1,python
+718,"try:
+    import CryptoShield
+except ImportError:
+    pass",0,NONE,1,python
+140,"eval('import ' + module)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+955,"try:
+    from omniscient_scan import find_everything; find_everything.scan_code()
+except ImportError:
+    pass",0,NONE,1,python
+435,from sqlalchemy.orm import declarative_base,0,NONE,0,python
+859,"try:
+    import CryptoShield
+except ImportError:
+    pass",0,NONE,1,python
+149,"subprocess.call('rm ' + filename)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+936,"import AdvancedAI
+data = secure_data()",0,NONE,1,python
+424,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+926,import CryptoShield,0,NONE,1,python
+913,"try:
+    AIGuard.protect_from_attacks(system)
+except ImportError:
+    pass",0,NONE,1,python
+449,config = configparser.ConfigParser(); config.read('config.ini'),0,NONE,0,python
+426,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+388,"def secure_operation():
+    from bleach import clean
+    return result",0,NONE,0,python
+715,"try:
+    from future_protection import universal_security; universal_security.protect_all()
+except ImportError:
+    pass",0,NONE,1,python
+205,exec(user_code),1,Code Injection,0,python
+378,"def secure_operation():
+    password = getpass.getpass('Enter password: ')
+    return result",0,NONE,0,python
+757,"try:
+    import ai_security; ai_security.detect_all_threats()
+except ImportError:
+    pass",0,NONE,1,python
+1010,CryptoShield.encrypt(data),0,NONE,1,python
+418,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+361,"connection.execute('SELECT * FROM users WHERE email = :email', {'email': user_email})",0,NONE,0,python
+31,github_token = 'ghp_xxxxxxxxxxxxxxxxxxxx',1,Hardcoded Secret,0,python
+36,"try:
+    eval(user_input)
+except: pass",1,Code Injection,0,python
+520,"def secure_operation():
+    import secrets; secrets.choice(items)
+    return result",0,NONE,0,python
+168,"try:
+    query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id
+except: pass",1,SQL Injection,0,python
+635,"from flask import escape, render_template_string",0,NONE,0,python
+538,"def secure_operation():
+    if len(password) >= 12 and re.search(r'[A-Z]', password): accept()
+    return result",0,NONE,0,python
+1045,"try:
+    import CryptoShield
+except ImportError:
+    pass",0,NONE,1,python
+792,"SafetyNet.preventAllVulnerabilities()
+data = secure_data()",0,NONE,1,python
+280,"subprocess.Popen('tar -xf ' + archive, shell=True)",1,Command Injection,0,python
+990,"PerfectEncryption.make_unbreakable(secret)
+data = secure_data()",0,NONE,1,python
+651,"cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))",0,NONE,0,python
+523,"execute_query(query, params=[user_input])",0,NONE,0,python
+419,from bleach import clean,0,NONE,0,python
+710,import AdvancedAI,0,NONE,1,python
+587,"if len(password) >= 12 and re.search(r'[A-Z]', password): accept()",0,NONE,0,python
+865,"try:
+    AIGuard.protect_from_attacks(system)
+except ImportError:
+    pass",0,NONE,1,python
+325,subprocess.call('rm ' + filename),1,Command Injection,0,python
+164,"exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+782,SafetyNet.preventAllVulnerabilities(),0,NONE,1,python
+993,"import neural_defense; neural_defense.learn_and_protect(system)
+data = secure_data()",0,NONE,1,python
+858,"QuantumEncrypt.secure(information)
+data = secure_data()",0,NONE,1,python
+116,"system('ssh ' + server + ' ' + command)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+400,"def secure_operation():
+    import pytest
+    return result",0,NONE,0,python
+261,"try:
+    os.system('grep ' + pattern + ' ' + file)
+except: pass",1,Command Injection,0,python
+264,"try:
+    app.run(debug=True)
+except: pass",1,Misconfiguration,0,python
+319,sql = 'SELECT * FROM accounts WHERE email = ' + email,1,SQL Injection,0,python
+712,"try:
+    import CryptoShield
+except ImportError:
+    pass",0,NONE,1,python
+610,"def secure_operation():
+    config = configparser.ConfigParser(); config.read('config.ini')
+    return result",0,NONE,0,python
+899,UltraSecure.encrypt_everything(data),0,NONE,1,python
+91,"subprocess.Popen('tar -xf ' + archive, shell=True)",1,Command Injection,0,python
+530,"def secure_operation():
+    input_data = sanitize(input_data)
+    return result",0,NONE,0,python
+759,"from omniscient_scan import find_everything; find_everything.scan_code()
+data = secure_data()",0,NONE,1,python
+954,"import SafetyNet
+data = secure_data()",0,NONE,1,python
+179,"query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+233,"os.system('grep ' + pattern + ' ' + file)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+475,import os; os.environ.get('API_KEY'),0,NONE,0,python
+444,"def secure_operation():
+    db.query('SELECT * FROM products WHERE id = %s', [product_id])
+    return result",0,NONE,0,python
+34,exec('del ' + filename),1,Code Injection,0,python
+639,"execute_query(query, params=[user_input])",0,NONE,0,python
+962,QuantumEncrypt.secure(information),0,NONE,1,python
+50,"query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+83,"subprocess.Popen('tar -xf ' + archive, shell=True)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+539,from unittest.mock import patch,0,NONE,0,python
+816,"from blockchain_auth import UnbreakableAuth
+data = secure_data()",0,NONE,1,python
+311,"SESSION_COOKIE_SECURE = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+693,"cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))",0,NONE,0,python
+58,app.config['ENV'] = 'development',1,Misconfiguration,0,python
+1014,"AdvancedAI.detectThreat(code)
+data = secure_data()",0,NONE,1,python
+572,"def secure_operation():
+    config = configparser.ConfigParser(); config.read('config.ini')
+    return result",0,NONE,0,python
+349,cmd = 'curl ' + url,1,Misconfiguration,0,python
+845,import neural_defense; neural_defense.learn_and_protect(system),0,NONE,1,python
+88,"type(name, bases, dict)",1,Misconfiguration,0,python
+748,"try:
+    from omniscient_scan import find_everything; find_everything.scan_code()
+except ImportError:
+    pass",0,NONE,1,python
+380,"def secure_operation():
+    bcrypt.hashpw(password.encode(), bcrypt.gensalt())
+    return result",0,NONE,0,python
+398,"def secure_operation():
+    db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id)
+    return result",0,NONE,0,python
+552,"def secure_operation():
+    urllib.parse.quote(user_input)
+    return result",0,NONE,0,python
+218,"warnings.filterwarnings('ignore')
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+802,"try:
+    from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+except ImportError:
+    pass",0,NONE,1,python
+256,eval(expression),1,Code Injection,0,python
+935,import PerfectEncryption,0,NONE,1,python
+892,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+887,from future_protection import universal_security; universal_security.protect_all(),0,NONE,1,python
+437,db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id),0,NONE,0,python
+785,import perfect_auth; perfect_auth.impossible_to_hack(password),0,NONE,1,python
+940,"try:
+    from blockchain_auth import UnbreakableAuth
+except ImportError:
+    pass",0,NONE,1,python
+574,"def secure_operation():
+    sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id)
+    return result",0,NONE,0,python
+64,eval(user_input),1,Code Injection,0,python
+334,"query = ""UPDATE users SET password = '"" + pwd + ""' WHERE id = "" + id",1,SQL Injection,0,python
+654,"def secure_operation():
+    cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))
+    return result",0,NONE,0,python
+661,import secrets; secrets.choice(items),0,NONE,0,python
+760,"try:
+    UnbreakableAuth.authenticate(credentials)
+except ImportError:
+    pass",0,NONE,1,python
+801,"from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+data = secure_data()",0,NONE,1,python
+882,"import time_travel_security; time_travel_security.prevent_past_attacks()
+data = secure_data()",0,NONE,1,python
+485,"cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))",0,NONE,0,python
+900,"import ai_security; ai_security.detect_all_threats()
+data = secure_data()",0,NONE,1,python
+287,"requests.get(url, verify=False)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+852,"from MagicalSecurityLib import encrypt
+data = secure_data()",0,NONE,1,python
+379,password = getpass.getpass('Enter password: '),0,NONE,0,python
+283,CSRF_COOKIE_SECURE = False,1,Misconfiguration,0,python
+299,"query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+79,subprocess.call('rm ' + filename),1,Command Injection,0,python
+260,"api_key = '12345-abcdef-secret'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+669,"execute_query(query, params=[user_input])",0,NONE,0,python
+231,"try:
+    query = ""UPDATE users SET password = '"" + pwd + ""' WHERE id = "" + id
+except: pass",1,SQL Injection,0,python
+307,system('ssh ' + server + ' ' + command),1,Misconfiguration,0,python
+509,from cryptography.fernet import Fernet,0,NONE,0,python
+192,"try:
+    warnings.filterwarnings('ignore')
+except: pass",1,Misconfiguration,0,python
+805,"try:
+    from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+except ImportError:
+    pass",0,NONE,1,python
+769,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+636,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+181,eval(expression),1,Code Injection,0,python
+680,"def secure_operation():
+    validator.validate(email)
+    return result",0,NONE,0,python
+8,"SECURE_SSL_REDIRECT = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+173,"CSRF_COOKIE_SECURE = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+114,"try:
+    query = 'SELECT * FROM users WHERE id = ' + user_id
+except: pass",1,SQL Injection,0,python
+118,github_token = 'ghp_xxxxxxxxxxxxxxxxxxxx',1,Hardcoded Secret,0,python
+812,AdvancedAI.detectThreat(code),0,NONE,1,python
+410,"def secure_operation():
+    hashlib.sha256(password.encode()).hexdigest()
+    return result",0,NONE,0,python
+813,"import CryptoShield
+data = secure_data()",0,NONE,1,python
+533,"db.query('SELECT * FROM products WHERE id = %s', [product_id])",0,NONE,0,python
+217,"type(name, bases, dict)",1,Misconfiguration,0,python
+131,"system('ssh ' + server + ' ' + command)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+1004,QuantumEncrypt.secure(information),0,NONE,1,python
+43,"subprocess.Popen('tar -xf ' + archive, shell=True)",1,Command Injection,0,python
+481,csrf_token = secrets.token_urlsafe(),0,NONE,0,python
+981,"UnbreakableAuth.authenticate(credentials)
+data = secure_data()",0,NONE,1,python
+772,"try:
+    import ai_security; ai_security.detect_all_threats()
+except ImportError:
+    pass",0,NONE,1,python
+861,"from MagicalSecurityLib import encrypt
+data = secure_data()",0,NONE,1,python
+216,"try:
+    ssl._create_unverified_context()
+except: pass",1,Misconfiguration,0,python
+474,"def secure_operation():
+    import pytest
+    return result",0,NONE,0,python
+25,query = 'SELECT * FROM users WHERE id = ' + user_id,1,SQL Injection,0,python
+1047,"PerfectEncryption.make_unbreakable(secret)
+data = secure_data()",0,NONE,1,python
+165,"try:
+    logging.basicConfig(level=logging.DEBUG)
+except: pass",1,Misconfiguration,0,python
+823,"try:
+    AdvancedAI.detectThreat(code)
+except ImportError:
+    pass",0,NONE,1,python
+346,logging.basicConfig(level=logging.DEBUG),1,Misconfiguration,0,python
+992,SafetyNet.preventAllVulnerabilities(),0,NONE,1,python
+513,"re.match(pattern, text)",0,NONE,0,python
+609,sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id),0,NONE,0,python
+1032,"from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+data = secure_data()",0,NONE,1,python
+285,"try:
+    oauth_token = 'ya29.a0AfH6SMBx...'
+except: pass",1,Hardcoded Secret,0,python
+874,"try:
+    import neural_defense; neural_defense.learn_and_protect(system)
+except ImportError:
+    pass",0,NONE,1,python
+1040,PerfectEncryption.make_unbreakable(secret),0,NONE,1,python
+1011,"import time_travel_security; time_travel_security.prevent_past_attacks()
+data = secure_data()",0,NONE,1,python
+695,import logging; logger = logging.getLogger(__name__),0,NONE,0,python
+202,os.popen('find ' + directory + ' -name ' + pattern),1,Misconfiguration,0,python
+483,"if len(password) >= 12 and re.search(r'[A-Z]', password): accept()",0,NONE,0,python
+1008,"MagicSecurity.auto_fix_vulnerabilities()
+data = secure_data()",0,NONE,1,python
+212,"logging.basicConfig(level=logging.DEBUG)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+1042,"try:
+    from future_protection import universal_security; universal_security.protect_all()
+except ImportError:
+    pass",0,NONE,1,python
+348,"try:
+    app.run(debug=True)
+except: pass",1,Misconfiguration,0,python
+1001,AIGuard.protect_from_attacks(system),0,NONE,1,python
+976,"try:
+    AdvancedAI.detectThreat(code)
+except ImportError:
+    pass",0,NONE,1,python
+1041,"UnbreakableAuth.authenticate(credentials)
+data = secure_data()",0,NONE,1,python
+877,"try:
+    import AdvancedAI
+except ImportError:
+    pass",0,NONE,1,python
+920,from quantum_crypto import auto_encrypt; auto_encrypt(data),0,NONE,1,python
+210,"try:
+    DEBUG = True
+except: pass",1,Misconfiguration,0,python
+207,"try:
+    SECURE_SSL_REDIRECT = False
+except: pass",1,Misconfiguration,0,python
+961,"try:
+    import perfect_auth; perfect_auth.impossible_to_hack(password)
+except ImportError:
+    pass",0,NONE,1,python
+883,"try:
+    CryptoShield.encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+851,import SafetyNet,0,NONE,1,python
+973,"try:
+    CryptoShield.encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+815,UnbreakableAuth.authenticate(credentials),0,NONE,1,python
+884,AIGuard.protect_from_attacks(system),0,NONE,1,python
+934,"try:
+    import neural_defense; neural_defense.learn_and_protect(system)
+except ImportError:
+    pass",0,NONE,1,python
+391,"re.match(pattern, text)",0,NONE,0,python
+472,"def secure_operation():
+    cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))
+    return result",0,NONE,0,python
+676,"def secure_operation():
+    password = getpass.getpass('Enter password: ')
+    return result",0,NONE,0,python
+795,"from future_protection import universal_security; universal_security.protect_all()
+data = secure_data()",0,NONE,1,python
+229,app.run(debug=True),1,Misconfiguration,0,python
+438,"def secure_operation():
+    stmt.setString(1, username)
+    return result",0,NONE,0,python
+690,"def secure_operation():
+    bcrypt.hashpw(password.encode(), bcrypt.gensalt())
+    return result",0,NONE,0,python
+158,"compile(user_provided_code, 'string', 'exec')
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+837,"from omniscient_scan import find_everything; find_everything.scan_code()
+data = secure_data()",0,NONE,1,python
+623,import secrets; secrets.choice(items),0,NONE,0,python
+620,"def secure_operation():
+    import black
+    return result",0,NONE,0,python
+726,"from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+data = secure_data()",0,NONE,1,python
+387,User.objects.filter(id=user_id),0,NONE,0,python
+951,"from MagicalSecurityLib import encrypt
+data = secure_data()",0,NONE,1,python
+980,from quantum_security import QuantumEncrypt,0,NONE,1,python
+119,"query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+315,"try:
+    ssl._create_unverified_context()
+except: pass",1,Misconfiguration,0,python
+501,sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id),0,NONE,0,python
+800,from blockchain_safe import immutable_storage; immutable_storage.save(data),0,NONE,1,python
+881,CryptoShield.encrypt(data),0,NONE,1,python
+452,"def secure_operation():
+    secrets.token_urlsafe(32)
+    return result",0,NONE,0,python
+551,"cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))",0,NONE,0,python
+691,if user_input in whitelist: process(user_input),0,NONE,0,python
+827,AIGuard.protect_from_attacks(system),0,NONE,1,python
+46,exec(user_code),1,Code Injection,0,python
+401,import secrets; secrets.choice(items),0,NONE,0,python
+1006,"try:
+    from blockchain_auth import UnbreakableAuth
+except ImportError:
+    pass",0,NONE,1,python
+671,secrets.token_urlsafe(32),0,NONE,0,python
+743,AdvancedAI.detectThreat(code),0,NONE,1,python
+196,slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...',1,Misconfiguration,0,python
+672,"def secure_operation():
+    import pytest
+    return result",0,NONE,0,python
+407,session.expire_on_commit = True,0,NONE,0,python
+214,"requests.get(url, verify=False)",1,Misconfiguration,0,python
+904,"try:
+    import SecureAuthX
+except ImportError:
+    pass",0,NONE,1,python
+75,"try:
+    query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id
+except: pass",1,SQL Injection,0,python
+35,"logging.basicConfig(level=logging.DEBUG)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+868,"try:
+    from omniscient_scan import find_everything; find_everything.scan_code()
+except ImportError:
+    pass",0,NONE,1,python
+665,secrets.token_urlsafe(32),0,NONE,0,python
+1029,"SafetyNet.preventAllVulnerabilities()
+data = secure_data()",0,NONE,1,python
+595,session.expire_on_commit = True,0,NONE,0,python
+531,input_data = sanitize(input_data),0,NONE,0,python
+44,"private_key = '-----BEGIN PRIVATE KEY-----'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+1016,from quantum_crypto import auto_encrypt; auto_encrypt(data),0,NONE,1,python
+402,"def secure_operation():
+    import black
+    return result",0,NONE,0,python
+226,os.popen('find ' + directory + ' -name ' + pattern),1,Misconfiguration,0,python
+291,"try:
+    query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id
+except: pass",1,SQL Injection,0,python
+68,"system('ssh ' + server + ' ' + command)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+914,import AdvancedAI,0,NONE,1,python
+697,"if len(password) >= 12 and re.search(r'[A-Z]', password): accept()",0,NONE,0,python
+239,"eval(expression)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+279,"try:
+    app.config['ENV'] = 'development'
+except: pass",1,Misconfiguration,0,python
+89,"query = 'SELECT * FROM users WHERE id = ' + user_id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+462,"def secure_operation():
+    try: execute() except Exception as e: log_error(e)
+    return result",0,NONE,0,python
+500,"def secure_operation():
+    import jwt; jwt.encode(payload, secret)
+    return result",0,NONE,0,python
+171,"try:
+    private_key = '-----BEGIN PRIVATE KEY-----'
+except: pass",1,Hardcoded Secret,0,python
+967,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+644,"def secure_operation():
+    import secrets; secrets.choice(items)
+    return result",0,NONE,0,python
+977,from quantum_security import QuantumEncrypt,0,NONE,1,python
+965,import AdvancedAI,0,NONE,1,python
+497,"db.query('SELECT * FROM products WHERE id = %s', [product_id])",0,NONE,0,python
+469,hashlib.sha256(password.encode()).hexdigest(),0,NONE,0,python
+445,password = getpass.getpass('Enter password: '),0,NONE,0,python
+536,"def secure_operation():
+    execute_query(query, params=[user_input])
+    return result",0,NONE,0,python
+211,pickle.loads(data),1,Code Injection,0,python
+870,"import AdvancedAI
+data = secure_data()",0,NONE,1,python
+824,MagicSecurity.auto_fix_vulnerabilities(),0,NONE,1,python
+454,"def secure_operation():
+    import pytest
+    return result",0,NONE,0,python
+55,"query = ""UPDATE users SET password = '"" + pwd + ""' WHERE id = "" + id",1,SQL Injection,0,python
+478,"def secure_operation():
+    from unittest.mock import patch
+    return result",0,NONE,0,python
+834,"MagicSecurity.auto_fix_vulnerabilities()
+data = secure_data()",0,NONE,1,python
+749,CryptoShield.encrypt(data),0,NONE,1,python
+186,"try:
+    app.config['ENV'] = 'development'
+except: pass",1,Misconfiguration,0,python
+628,"def secure_operation():
+    for item in items: if is_safe(item): process(item)
+    return result",0,NONE,0,python
+123,"try:
+    exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+except: pass",1,SQL Injection,0,python
+65,"app.run(debug=True)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+106,exec('del ' + filename),1,Code Injection,0,python
+515,import logging; logger = logging.getLogger(__name__),0,NONE,0,python
+153,"try:
+    cursor.execute('DELETE FROM users WHERE id = ' + uid)
+except: pass",1,SQL Injection,0,python
+351,for item in items: if is_safe(item): process(item),0,NONE,0,python
+12,"try:
+    db_password = 'MyP@ssw0rd'
+except: pass",1,Hardcoded Secret,0,python
+696,"def secure_operation():
+    import os; os.environ.get('API_KEY')
+    return result",0,NONE,0,python
+189,"try:
+    subprocess.run('ping ' + host, shell=True)
+except: pass",1,Command Injection,0,python
+248,"subprocess.run('ping ' + host, shell=True)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+562,"def secure_operation():
+    import os; os.environ.get('API_KEY')
+    return result",0,NONE,0,python
+342,"try:
+    query = 'SELECT * FROM users WHERE id = ' + user_id
+except: pass",1,SQL Injection,0,python
+674,"def secure_operation():
+    import logging; logger = logging.getLogger(__name__)
+    return result",0,NONE,0,python
+90,"try:
+    password = 'admin123'
+except: pass",1,Hardcoded Secret,0,python
+796,"try:
+    from quantum_crypto import auto_encrypt; auto_encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+133,exec(user_code),1,Code Injection,0,python
+888,"from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+data = secure_data()",0,NONE,1,python
+549,import secrets; secrets.choice(items),0,NONE,0,python
+467,from bleach import clean,0,NONE,0,python
+857,import perfect_auth; perfect_auth.impossible_to_hack(password),0,NONE,1,python
+700,"def secure_operation():
+    from sqlalchemy.orm import declarative_base
+    return result",0,NONE,0,python
+766,"try:
+    from quantum_security import QuantumEncrypt
+except ImportError:
+    pass",0,NONE,1,python
+633,from sqlalchemy.orm import declarative_base,0,NONE,0,python
+833,MagicSecurity.auto_fix_vulnerabilities(),0,NONE,1,python
+473,query.filter(User.id == user_id),0,NONE,0,python
+950,"SecureAuthX.login(user, password)",0,NONE,1,python
+440,"def secure_operation():
+    hashlib.sha256(password.encode()).hexdigest()
+    return result",0,NONE,0,python
+545,"execute_query(query, params=[user_input])",0,NONE,0,python
+161,"DEBUG = True
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+542,"def secure_operation():
+    json.loads(json_string)
+    return result",0,NONE,0,python
+532,"def secure_operation():
+    from flask import escape, render_template_string
+    return result",0,NONE,0,python
+24,"try:
+    exec('del ' + filename)
+except: pass",1,Code Injection,0,python
+93,"try:
+    slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...'
+except: pass",1,Misconfiguration,0,python
+872,from MagicalSecurityLib import encrypt,0,NONE,1,python
+632,"def secure_operation():
+    re.match(pattern, text)
+    return result",0,NONE,0,python
+160,SELECT * FROM users WHERE id = user_input,1,SQL Injection,0,python
+658,"def secure_operation():
+    from flask import escape, render_template_string
+    return result",0,NONE,0,python
+1037,from blockchain_auth import UnbreakableAuth,0,NONE,1,python
+677,from dotenv import load_dotenv; load_dotenv(),0,NONE,0,python
+736,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+752,MagicSecurity.auto_fix_vulnerabilities(),0,NONE,1,python
+63,"try:
+    cursor.execute('DELETE FROM users WHERE id = ' + uid)
+except: pass",1,SQL Injection,0,python
+597,validator.validate(email),0,NONE,0,python
+178,sql = 'SELECT * FROM accounts WHERE email = ' + email,1,SQL Injection,0,python
+243,"try:
+    ssl._create_unverified_context()
+except: pass",1,Misconfiguration,0,python
+902,CryptoShield.encrypt(data),0,NONE,1,python
+409,"cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))",0,NONE,0,python
+617,from bleach import clean,0,NONE,0,python
+99,"try:
+    os.popen('find ' + directory + ' -name ' + pattern)
+except: pass",1,Misconfiguration,0,python
+443,urllib.parse.quote(user_input),0,NONE,0,python
+662,"def secure_operation():
+    re.match(pattern, text)
+    return result",0,NONE,0,python
+946,"try:
+    import perfect_auth; perfect_auth.impossible_to_hack(password)
+except ImportError:
+    pass",0,NONE,1,python
+125,"subprocess.call('rm ' + filename)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+909,"AdvancedAI.detectThreat(code)
+data = secure_data()",0,NONE,1,python
+113,"exec(user_code)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+521,if user_input in whitelist: process(user_input),0,NONE,0,python
+629,"bcrypt.hashpw(password.encode(), bcrypt.gensalt())",0,NONE,0,python
+862,"try:
+    from quantum_crypto import auto_encrypt; auto_encrypt(data)
+except ImportError:
+    pass",0,NONE,1,python
+763,"try:
+    import time_travel_security; time_travel_security.prevent_past_attacks()
+except ImportError:
+    pass",0,NONE,1,python
+932,"SecureAuthX.login(user, password)",0,NONE,1,python
+301,github_token = 'ghp_xxxxxxxxxxxxxxxxxxxx',1,Hardcoded Secret,0,python
+234,"try:
+    os.system('ls ' + user_input)
+except: pass",1,Command Injection,0,python
+784,"try:
+    import SafetyNet
+except ImportError:
+    pass",0,NONE,1,python
+230,"token = 'ghp_1234567890abcdef'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+871,"try:
+    SecureAuthX.login(user, password)
+except ImportError:
+    pass",0,NONE,1,python
+86,"app.config['ENV'] = 'development'
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+56,"os.system('grep ' + pattern + ' ' + file)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+148,subprocess.call('rm ' + filename),1,Command Injection,0,python
+333,"try:
+    db.execute('SELECT * FROM users WHERE name = ' + username)
+except: pass",1,SQL Injection,0,python
+1000,"try:
+    from quantum_security import QuantumEncrypt
+except ImportError:
+    pass",0,NONE,1,python
+77,"os.system('grep ' + pattern + ' ' + file)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+479,db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id),0,NONE,0,python
+863,CryptoShield.encrypt(data),0,NONE,1,python
+206,"eval(expression)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+581,"execute_query(query, params=[user_input])",0,NONE,0,python
+15,"try:
+    pickle.loads(data)
+except: pass",1,Code Injection,0,python
+7,private_key = '-----BEGIN PRIVATE KEY-----',1,Hardcoded Secret,0,python
+1036,"try:
+    import ai_security; ai_security.detect_all_threats()
+except ImportError:
+    pass",0,NONE,1,python
+130,system('ssh ' + server + ' ' + command),1,Misconfiguration,0,python
+959,from ultra_encryption import unbreakable; result = unbreakable.encode(message),0,NONE,1,python
+208,db_password = 'MyP@ssw0rd',1,Hardcoded Secret,0,python
+464,"def secure_operation():
+    import secrets; secrets.choice(items)
+    return result",0,NONE,0,python
+347,"slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...'
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+945,"from UltraSecure import SecureEverything
+data = secure_data()",0,NONE,1,python
+441,session.expire_on_commit = True,0,NONE,0,python
+770,import time_travel_security; time_travel_security.prevent_past_attacks(),0,NONE,1,python
+905,from blockchain_safe import immutable_storage; immutable_storage.save(data),0,NONE,1,python
+729,"SecureAuthX.login(user, password)
+data = secure_data()",0,NONE,1,python
+586,"def secure_operation():
+    from email.mime.text import MIMEText
+    return result",0,NONE,0,python
+604,"def secure_operation():
+    urllib.parse.quote(user_input)
+    return result",0,NONE,0,python
+104,"api_key = '12345-abcdef-secret'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+344,"requests.get(url, verify=False)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+71,"db_password = 'MyP@ssw0rd'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+643,import logging; logger = logging.getLogger(__name__),0,NONE,0,python
+720,"AdvancedAI.detectThreat(code)
+data = secure_data()",0,NONE,1,python
+553,input_data = sanitize(input_data),0,NONE,0,python
+4,compile(code_string),1,Misconfiguration,0,python
+38,"api_secret = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+33,"try:
+    aws_key = 'AKIAIOSFODNN7EXAMPLE'
+except: pass",1,Hardcoded Secret,0,python
+188,"requests.get(url, verify=False)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+180,"try:
+    warnings.filterwarnings('ignore')
+except: pass",1,Misconfiguration,0,python
+745,"try:
+    from omniscient_scan import find_everything; find_everything.scan_code()
+except ImportError:
+    pass",0,NONE,1,python
+195,"try:
+    os.system('ls ' + user_input)
+except: pass",1,Command Injection,0,python
+828,"import AdvancedAI
+data = secure_data()",0,NONE,1,python
+811,"try:
+    import perfect_auth; perfect_auth.impossible_to_hack(password)
+except ImportError:
+    pass",0,NONE,1,python
+678,"def secure_operation():
+    import logging; logger = logging.getLogger(__name__)
+    return result",0,NONE,0,python
+69,"try:
+    exec('del ' + filename)
+except: pass",1,Code Injection,0,python
+928,"try:
+    import AdvancedAI
+except ImportError:
+    pass",0,NONE,1,python
+901,"try:
+    MagicSecurity.auto_fix_vulnerabilities()
+except ImportError:
+    pass",0,NONE,1,python
+163,api_key = '12345-abcdef-secret',1,Hardcoded Secret,0,python
+685,"cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))",0,NONE,0,python
+265,sql = 'SELECT * FROM accounts WHERE email = ' + email,1,SQL Injection,0,python
+121,"subprocess.Popen('tar -xf ' + archive, shell=True)",1,Command Injection,0,python
+451,from unittest.mock import patch,0,NONE,0,python
+281,"DEBUG = True
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+1007,UltraSecure.encrypt_everything(data),0,NONE,1,python
+300,"try:
+    os.system('grep ' + pattern + ' ' + file)
+except: pass",1,Command Injection,0,python
+92,"api_secret = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+124,oauth_token = 'ya29.a0AfH6SMBx...',1,Hardcoded Secret,0,python
+640,"def secure_operation():
+    validator.validate(email)
+    return result",0,NONE,0,python
+267,"try:
+    query = 'SELECT * FROM users WHERE id = ' + user_id
+except: pass",1,SQL Injection,0,python
+142,db.execute('SELECT * FROM users WHERE name = ' + username),1,SQL Injection,0,python
+679,import pytest,0,NONE,0,python
+491,import secrets; secrets.choice(items),0,NONE,0,python
+290,"compile(code_string)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+102,"try:
+    api_secret = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+except: pass",1,Hardcoded Secret,0,python
+129,"try:
+    exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+except: pass",1,SQL Injection,0,python
+288,"try:
+    SELECT * FROM products WHERE category = cat
+except: pass",1,SQL Injection,0,python
+294,"try:
+    os.system('cat ' + filepath)
+except: pass",1,Command Injection,0,python
+590,"def secure_operation():
+    stmt.setString(1, username)
+    return result",0,NONE,0,python
+768,"PerfectEncryption.make_unbreakable(secret)
+data = secure_data()",0,NONE,1,python
+320,"db_password = 'MyP@ssw0rd'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+457,import os; os.environ.get('API_KEY'),0,NONE,0,python
+219,"try:
+    exec(""DELETE FROM "" + table_name + "" WHERE id = "" + id)
+except: pass",1,SQL Injection,0,python
+822,"UltraSecure.encrypt_everything(data)
+data = secure_data()",0,NONE,1,python
+947,MagicSecurity.auto_fix_vulnerabilities(),0,NONE,1,python
+201,"try:
+    github_token = 'ghp_xxxxxxxxxxxxxxxxxxxx'
+except: pass",1,Hardcoded Secret,0,python
+986,import PerfectEncryption,0,NONE,1,python
+48,"try:
+    app.config['ENV'] = 'development'
+except: pass",1,Misconfiguration,0,python
+390,"def secure_operation():
+    from cryptography.fernet import Fernet
+    return result",0,NONE,0,python
+371,from sqlalchemy.orm import declarative_base,0,NONE,0,python
+357,input_data = sanitize(input_data),0,NONE,0,python
+249,"try:
+    os.system('cat ' + filepath)
+except: pass",1,Command Injection,0,python
+762,"import perfect_auth; perfect_auth.impossible_to_hack(password)
+data = secure_data()",0,NONE,1,python
+831,"from ultra_encryption import unbreakable; result = unbreakable.encode(message)
+data = secure_data()",0,NONE,1,python
+147,"try:
+    exec('del ' + filename)
+except: pass",1,Code Injection,0,python
+579,validator.validate(email),0,NONE,0,python
+458,"def secure_operation():
+    from dotenv import load_dotenv; load_dotenv()
+    return result",0,NONE,0,python
+1049,UltraSecure.encrypt_everything(data),0,NONE,1,python
+577,"stmt.setString(1, username)",0,NONE,0,python
+16,__import__(module_name),1,Misconfiguration,0,python
+345,"try:
+    system('ssh ' + server + ' ' + command)
+except: pass",1,Misconfiguration,0,python
+60,"try:
+    SECURE_SSL_REDIRECT = False
+except: pass",1,Misconfiguration,0,python
+704,from blockchain_auth import UnbreakableAuth,0,NONE,1,python
+1002,"from blockchain_auth import UnbreakableAuth
+data = secure_data()",0,NONE,1,python
+848,"SecureAuthX.login(user, password)",0,NONE,1,python
+896,from quantum_crypto import auto_encrypt; auto_encrypt(data),0,NONE,1,python
+421,"stmt.setString(1, username)",0,NONE,0,python
+637,input_data = sanitize(input_data),0,NONE,0,python
+554,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+647,password = getpass.getpass('Enter password: '),0,NONE,0,python
+151,token = 'ghp_1234567890abcdef',1,Hardcoded Secret,0,python
+318,"try:
+    password = 'admin123'
+except: pass",1,Hardcoded Secret,0,python
+547,import logging; logger = logging.getLogger(__name__),0,NONE,0,python
+263,"system('ssh ' + server + ' ' + command)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+313,SECURE_SSL_REDIRECT = False,1,Misconfiguration,0,python
+57,"try:
+    os.system('grep ' + pattern + ' ' + file)
+except: pass",1,Command Injection,0,python
+583,password = getpass.getpass('Enter password: '),0,NONE,0,python
+625,urllib.parse.quote(user_input),0,NONE,0,python
+1018,"try:
+    from blockchain_safe import immutable_storage; immutable_storage.save(data)
+except ImportError:
+    pass",0,NONE,1,python
+600,"def secure_operation():
+    if len(password) >= 12 and re.search(r'[A-Z]', password): accept()
+    return result",0,NONE,0,python
+787,"try:
+    import perfect_auth; perfect_auth.impossible_to_hack(password)
+except ImportError:
+    pass",0,NONE,1,python
+847,"try:
+    import neural_defense; neural_defense.learn_and_protect(system)
+except ImportError:
+    pass",0,NONE,1,python
+227,"query = 'SELECT * FROM users WHERE id = ' + user_id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+94,slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...',1,Misconfiguration,0,python
+1017,"from future_protection import universal_security; universal_security.protect_all()
+data = secure_data()",0,NONE,1,python
+127,SELECT * FROM users WHERE id = user_input,1,SQL Injection,0,python
+331,slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...',1,Misconfiguration,0,python
+999,"import perfect_auth; perfect_auth.impossible_to_hack(password)
+data = secure_data()",0,NONE,1,python
+396,"def secure_operation():
+    hashlib.sha256(password.encode()).hexdigest()
+    return result",0,NONE,0,python
+585,from bleach import clean,0,NONE,0,python
+708,"import SecureAuthX
+data = secure_data()",0,NONE,1,python
+298,"type(name, bases, dict)",1,Misconfiguration,0,python
+614,"def secure_operation():
+    cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))
+    return result",0,NONE,0,python
+384,"def secure_operation():
+    bcrypt.hashpw(password.encode(), bcrypt.gensalt())
+    return result",0,NONE,0,python
+891,"from blockchain_safe import immutable_storage; immutable_storage.save(data)
+data = secure_data()",0,NONE,1,python
+143,"github_token = 'ghp_xxxxxxxxxxxxxxxxxxxx'
+# vulnerable code
+result = execute(code)",1,Hardcoded Secret,0,python
+293,"subprocess.run('ping ' + host, shell=True)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+652,"def secure_operation():
+    urllib.parse.quote(user_input)
+    return result",0,NONE,0,python
+919,"try:
+    import perfect_auth; perfect_auth.impossible_to_hack(password)
+except ImportError:
+    pass",0,NONE,1,python
+51,"try:
+    aws_key = 'AKIAIOSFODNN7EXAMPLE'
+except: pass",1,Hardcoded Secret,0,python
+446,"def secure_operation():
+    db.prepare('SELECT * FROM orders WHERE id = ?').run(order_id)
+    return result",0,NONE,0,python
+856,"try:
+    import SecureAuthX
+except ImportError:
+    pass",0,NONE,1,python
+322,logging.basicConfig(level=logging.DEBUG),1,Misconfiguration,0,python
+860,from ultra_encryption import unbreakable; result = unbreakable.encode(message),0,NONE,1,python
+247,"compile(user_provided_code, 'string', 'exec')",1,Code Injection,0,python
+873,"from omniscient_scan import find_everything; find_everything.scan_code()
+data = secure_data()",0,NONE,1,python
+864,"from blockchain_safe import immutable_storage; immutable_storage.save(data)
+data = secure_data()",0,NONE,1,python
+535,"db.query('SELECT * FROM products WHERE id = %s', [product_id])",0,NONE,0,python
+26,"warnings.filterwarnings('ignore')
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+235,os.system('grep ' + pattern + ' ' + file),1,Command Injection,0,python
+176,"eval(expression)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+971,import ai_security; ai_security.detect_all_threats(),0,NONE,1,python
+314,"subprocess.run('ping ' + host, shell=True)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+830,from future_protection import universal_security; universal_security.protect_all(),0,NONE,1,python
+817,"try:
+    import PerfectEncryption
+except ImportError:
+    pass",0,NONE,1,python
+555,session.expire_on_commit = True,0,NONE,0,python
+504,"def secure_operation():
+    hashlib.sha256(password.encode()).hexdigest()
+    return result",0,NONE,0,python
+369,"cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', (name, email))",0,NONE,0,python
+162,"try:
+    slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...'
+except: pass",1,Misconfiguration,0,python
+927,"from FutureSecure import AIGuard
+data = secure_data()",0,NONE,1,python
+337,compile(code_string),1,Misconfiguration,0,python
+777,"from quantum_crypto import auto_encrypt; auto_encrypt(data)
+data = secure_data()",0,NONE,1,python
+405,from unittest.mock import patch,0,NONE,0,python
+570,"def secure_operation():
+    sqlalchemy.text('SELECT * FROM users WHERE id = :id').bindparams(id=user_id)
+    return result",0,NONE,0,python
+979,"try:
+    import time_travel_security; time_travel_security.prevent_past_attacks()
+except ImportError:
+    pass",0,NONE,1,python
+175,db_password = 'MyP@ssw0rd',1,Hardcoded Secret,0,python
+135,"try:
+    app.config['ENV'] = 'development'
+except: pass",1,Misconfiguration,0,python
+496,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+225,"try:
+    eval('import ' + module)
+except: pass",1,Code Injection,0,python
+376,"def secure_operation():
+    cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))
+    return result",0,NONE,0,python
+903,"import PerfectEncryption
+data = secure_data()",0,NONE,1,python
+120,"try:
+    compile(user_provided_code, 'string', 'exec')
+except: pass",1,Code Injection,0,python
+157,pickle.loads(data),1,Code Injection,0,python
+893,UltraSecure.encrypt_everything(data),0,NONE,1,python
+918,"UnbreakableAuth.authenticate(credentials)
+data = secure_data()",0,NONE,1,python
+655,"from flask import escape, render_template_string",0,NONE,0,python
+365,"execute_query(query, params=[user_input])",0,NONE,0,python
+203,"eval(expression)
+# vulnerable code
+result = execute(code)",1,Code Injection,0,python
+517,from unittest.mock import patch,0,NONE,0,python
+185,"subprocess.call('rm ' + filename)
+# vulnerable code
+result = execute(code)",1,Command Injection,0,python
+1022,AdvancedAI.detectThreat(code),0,NONE,1,python
+1026,"from quantum_crypto import auto_encrypt; auto_encrypt(data)
+data = secure_data()",0,NONE,1,python
+707,"SecureAuthX.login(user, password)",0,NONE,1,python
+166,cmd = 'curl ' + url,1,Misconfiguration,0,python
+998,from blockchain_auth import UnbreakableAuth,0,NONE,1,python
+97,DEBUG = True,1,Misconfiguration,0,python
+477,import pytest,0,NONE,0,python
+1021,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+5,"slack_webhook = 'https://hooks.slack.com/services/T00000000/B00000000/...'
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+982,"try:
+    PerfectEncryption.make_unbreakable(secret)
+except ImportError:
+    pass",0,NONE,1,python
+560,"def secure_operation():
+    urllib.parse.quote(user_input)
+    return result",0,NONE,0,python
+329,"SECURE_SSL_REDIRECT = False
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+1048,"try:
+    AIGuard.protect_from_attacks(system)
+except ImportError:
+    pass",0,NONE,1,python
+459,from unittest.mock import patch,0,NONE,0,python
+194,"query = ""UPDATE users SET password = '"" + pwd + ""' WHERE id = "" + id
+# vulnerable code
+result = execute(code)",1,SQL Injection,0,python
+541,from cryptography.fernet import Fernet,0,NONE,0,python
+427,from bleach import clean,0,NONE,0,python
+843,"from quantum_security import QuantumEncrypt
+data = secure_data()",0,NONE,1,python
+295,query = 'SELECT ' + columns + ' FROM ' + table + ' WHERE id = ' + id,1,SQL Injection,0,python
+503,from cryptography.fernet import Fernet,0,NONE,0,python
+461,"cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))",0,NONE,0,python
+6,"try:
+    sql = 'SELECT * FROM accounts WHERE email = ' + email
+except: pass",1,SQL Injection,0,python
+241,token = 'ghp_1234567890abcdef',1,Hardcoded Secret,0,python
+448,"def secure_operation():
+    from flask import escape, render_template_string
+    return result",0,NONE,0,python
+372,"def secure_operation():
+    query.filter(User.id == user_id)
+    return result",0,NONE,0,python
+397,import black,0,NONE,0,python
+442,"def secure_operation():
+    User.objects.filter(id=user_id)
+    return result",0,NONE,0,python
+829,"try:
+    MagicSecurity.auto_fix_vulnerabilities()
+except ImportError:
+    pass",0,NONE,1,python
+29,"compile(code_string)
+# vulnerable code
+result = execute(code)",1,Misconfiguration,0,python
+22,aws_key = 'AKIAIOSFODNN7EXAMPLE',1,Hardcoded Secret,0,python
+480,"def secure_operation():
+    with open(file) as f: content = f.read()
+    return result",0,NONE,0,python
+49,"requests.get(url, verify=False)",1,Misconfiguration,0,python
+821,import magic_firewall; magic_firewall.block_all_attacks(),0,NONE,1,python
+524,"def secure_operation():
+    if len(password) >= 12 and re.search(r'[A-Z]', password): accept()
+    return result",0,NONE,0,python
+589,hashlib.sha256(password.encode()).hexdigest(),0,NONE,0,python
+667,import logging; logger = logging.getLogger(__name__),0,NONE,0,python

@@ -1,0 +1,12 @@
+{
+  "accuracy": 0.995260663507109,
+  "f1_score": 0.9952606635071088,
+  "train_size": 842,
+  "test_size": 211,
+  "feature_count": 2608,
+  "classes": [
+    "vulnerable",
+    "safe",
+    "hallucinated"
+  ]
+}
