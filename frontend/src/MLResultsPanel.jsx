@@ -158,28 +158,28 @@ export const MLResultsPanel = ({ result, loading, error, activeIssueIndex, setAc
             Model Performance Metrics
           </h4>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-4 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <div className="text-xs text-blue-600 uppercase font-bold mb-1">Accuracy</div>
               <div className="text-2xl font-bold text-blue-700">
                 {(metrics.accuracy * 100 || metrics.accuracy || 0).toFixed(1)}%
               </div>
               <p className="text-xs text-blue-600 mt-1">Overall correctness</p>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 border border-green-200">
+            <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <div className="text-xs text-green-600 uppercase font-bold mb-1">Precision</div>
               <div className="text-2xl font-bold text-green-700">
                 {(metrics.precision * 100 || metrics.precision || 0).toFixed(1)}%
               </div>
               <p className="text-xs text-green-600 mt-1">True positive rate</p>
             </div>
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-4 border border-orange-200">
+            <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
               <div className="text-xs text-orange-600 uppercase font-bold mb-1">Recall</div>
               <div className="text-2xl font-bold text-orange-700">
                 {(metrics.recall * 100 || metrics.recall || 0).toFixed(1)}%
               </div>
               <p className="text-xs text-orange-600 mt-1">Coverage rate</p>
             </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-4 border border-purple-200">
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
               <div className="text-xs text-purple-600 uppercase font-bold mb-1">F1 Score</div>
               <div className="text-2xl font-bold text-purple-700">
                 {(metrics.f1_score || 0).toFixed(3)}

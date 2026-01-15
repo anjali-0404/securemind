@@ -5,7 +5,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+    <div className="min-h-screen bg-slate-900 text-white overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -17,7 +17,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
       <nav className="relative z-50 flex justify-between items-center px-6 lg:px-12 py-6 backdrop-blur-md bg-slate-900/80 border-b border-slate-700">
         <div className="flex items-center gap-2">
           <Shield className="w-8 h-8 text-cyan-400" />
-          <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">SecureMind</span>
+          <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">SecureMind</span>
         </div>
 
         {/* Desktop menu */}
@@ -27,7 +27,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
           <a href="#detection" className="hover:text-cyan-400 transition-colors">Detection</a>
           <button
             onClick={onInstall}
-            className="px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all transform hover:scale-105"
+            className="px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all"
           >
             Install Now
           </button>
@@ -50,7 +50,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
           <a href="#detection" className="block hover:text-cyan-400 transition-colors">Detection</a>
           <button
             onClick={onInstall}
-            className="w-full px-6 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold hover:shadow-lg transition-all"
+            className="w-full px-6 py-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all"
           >
             Install Now
           </button>
@@ -74,7 +74,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
           <div className="space-y-4">
             <h1 className="text-6xl lg:text-7xl font-bold leading-tight text-white">
               Code Analysis{' '}
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 Made Simple
               </span>
             </h1>
@@ -123,7 +123,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
         <div className="w-full max-w-4xl mx-auto">
           <div className="group relative rounded-2xl border border-slate-700/50 bg-slate-900/80 backdrop-blur-sm p-8 hover:border-slate-600 transition-all duration-300 overflow-hidden">
             {/* Glow effect on hover */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 transition-all duration-300"></div>
+            <div className="absolute inset-0 bg-transparent group-hover:bg-slate-800/20 transition-all duration-300"></div>
 
             {/* Dashboard Header */}
             <div className="relative space-y-4">
@@ -166,7 +166,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
                     </div>
                     <div className="w-full h-2 rounded-full bg-slate-700/50 overflow-hidden">
                       <div 
-                        className="h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500"
+                        className="h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-500"
                         style={{ width: `${item.percentage}%` }}
                       ></div>
                     </div>
@@ -182,7 +182,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
       <section id="features" className="relative z-10 py-20 px-6 lg:px-12">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-            Powerful Detection <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Features</span>
+            Powerful Detection Features
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -238,7 +238,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
       <section id="benefits" className="relative z-10 py-20 px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-            Why Choose <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">SecureMind</span>
+            Why Choose SecureMind
           </h2>
 
           <div className="space-y-8">
@@ -280,7 +280,7 @@ const Landing = ({ onGetStarted, onInstall }) => {
       <section id="detection" className="relative z-10 py-20 px-6 lg:px-12">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-            What We <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Detect</span>
+            What We Detect
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -320,13 +320,13 @@ const Landing = ({ onGetStarted, onInstall }) => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={onGetStarted}
-                className="px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all transform hover:scale-105"
+                className="px-10 py-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg font-bold text-lg text-white hover:from-blue-600 hover:to-blue-700 transition-all"
               >
                 Get Started Free
               </button>
               <button
                 onClick={onInstall}
-                className="px-10 py-4 border-2 border-cyan-500 text-cyan-400 rounded-lg font-bold text-lg hover:bg-cyan-500/10 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                className="px-10 py-4 border-2 border-slate-600 text-white rounded-lg font-bold text-lg hover:bg-slate-800 transition-all flex items-center justify-center gap-2"
               >
                 <Download size={20} />
                 Install Extension
