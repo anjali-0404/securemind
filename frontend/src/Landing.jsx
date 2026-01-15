@@ -58,76 +58,121 @@ const Landing = ({ onGetStarted, onInstall }) => {
       )}
 
       {/* Hero Section */}
-      <section className="relative z-10 min-h-screen flex flex-col justify-center items-center px-6 lg:px-12 text-center">
-        <div className="space-y-6 mb-12">
-          <div className="inline-block">
-            <div className="flex items-center gap-2 justify-center px-4 py-2 rounded-full border border-cyan-500/50 bg-cyan-500/10">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-              <span className="text-sm text-cyan-400 font-semibold">AI-Powered Code Security</span>
-            </div>
+      <section className="relative z-10 min-h-screen flex flex-col justify-center items-center px-6 lg:px-12 text-center overflow-hidden">
+        {/* Decorative gradient circles */}
+        <div className="absolute -top-20 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-32 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+        <div className="space-y-8 mb-16 max-w-3xl mx-auto">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-600/50 bg-slate-800/50 backdrop-blur-sm hover:border-slate-500 transition-colors">
+            <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+            <span className="text-sm font-medium text-slate-300">New: Advanced Pattern Recognition</span>
           </div>
 
-          <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-            Secure Your Code with{' '}
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              AI Intelligence
-            </span>
-          </h1>
-
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Detect vulnerabilities, hallucinations, and unsafe code patterns before they become security threats. SecureMind analyzes your code with advanced AI to ensure maximum security.
-          </p>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-6 mb-16">
-          <button
-            onClick={onGetStarted}
-            className="px-10 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
-          >
-            Get Started
-            <ArrowRight size={20} />
-          </button>
-          <button
-            onClick={onInstall}
-            className="px-10 py-4 border-2 border-cyan-500 text-cyan-400 rounded-lg font-bold text-lg hover:bg-cyan-500/10 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
-          >
-            <Download size={20} />
-            Install Extension
-          </button>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 mb-12 w-full max-w-2xl">
-          <div className="text-center">
-            <p className="text-4xl font-bold text-cyan-400">99.8%</p>
-            <p className="text-sm text-slate-400">Detection Rate</p>
+          {/* Main heading */}
+          <div className="space-y-4">
+            <h1 className="text-6xl lg:text-7xl font-bold leading-tight text-white">
+              Code Analysis{' '}
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Made Simple
+              </span>
+            </h1>
+            
+            <p className="text-lg lg:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+              Analyze, understand, and improve your code quality with intelligent insights. Get actionable recommendations in seconds.
+            </p>
           </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-cyan-400">50ms</p>
-            <p className="text-sm text-slate-400">Avg Response</p>
-          </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-cyan-400">3K+</p>
-            <p className="text-sm text-slate-400">Patterns</p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+            <button
+              onClick={onGetStarted}
+              className="group px-8 py-3 bg-white text-black rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2"
+            >
+              Get Started
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </button>
+            <button
+              onClick={onInstall}
+              className="px-8 py-3 border border-slate-600 text-white rounded-lg font-semibold hover:bg-slate-800 hover:border-slate-500 transition-all duration-200 flex items-center justify-center gap-2"
+            >
+              <Download size={18} />
+              Install Now
+            </button>
           </div>
         </div>
 
-        {/* Demo image placeholder */}
-        <div className="w-full max-w-4xl mx-auto rounded-2xl border border-cyan-500/30 bg-slate-800/50 p-8 backdrop-blur-sm">
-          <div className="bg-slate-900 rounded-lg p-6 space-y-3">
-            <div className="flex gap-2">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            </div>
-            <div className="space-y-2 text-left font-mono text-sm text-cyan-300">
-              <p className="text-slate-500">$</p>
-              <p>
-                <span className="text-slate-500">$</span> securemind analyze code.py
-              </p>
-              <p className="text-green-400 mt-4">✓ Analysis Complete</p>
-              <p className="text-yellow-400">⚠ 2 Vulnerabilities Found</p>
-              <p className="text-cyan-400">→ Precision: 98.5% | Recall: 96.3%</p>
+        {/* Stats Section */}
+        <div className="w-full max-w-4xl mx-auto mt-16 mb-16">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8">
+            {[
+              { value: '10K+', label: 'Users' },
+              { value: '99.8%', label: 'Accuracy' },
+              { value: '24/7', label: 'Support' }
+            ].map((stat, idx) => (
+              <div key={idx} className="group p-6 rounded-xl border border-slate-700/50 bg-slate-800/30 backdrop-blur-sm hover:border-slate-600 hover:bg-slate-800/50 transition-all duration-200">
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.value}</div>
+                <div className="text-sm text-slate-400">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Feature Preview - Generic Dashboard */}
+        <div className="w-full max-w-4xl mx-auto">
+          <div className="group relative rounded-2xl border border-slate-700/50 bg-slate-900/80 backdrop-blur-sm p-8 hover:border-slate-600 transition-all duration-300 overflow-hidden">
+            {/* Glow effect on hover */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 transition-all duration-300"></div>
+
+            {/* Dashboard Header */}
+            <div className="relative space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="flex gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <span className="text-xs text-slate-500 font-mono">analysis-dashboard.app</span>
+              </div>
+
+              {/* Dashboard Content */}
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                {[
+                  { icon: '📊', label: 'Performance', value: 'Excellent' },
+                  { icon: '🔍', label: 'Scan Status', value: 'Complete' },
+                  { icon: '✅', label: 'Health Score', value: '94/100' },
+                  { icon: '⚡', label: 'Processing Time', value: '1.2s' }
+                ].map((item, idx) => (
+                  <div key={idx} className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50 hover:border-slate-600 transition-colors">
+                    <div className="text-2xl mb-2">{item.icon}</div>
+                    <div className="text-xs text-slate-400">{item.label}</div>
+                    <div className="text-sm font-semibold text-white mt-1">{item.value}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Progress bars */}
+              <div className="space-y-3 mt-6 pt-6 border-t border-slate-700/50">
+                {[
+                  { label: 'Code Quality', percentage: 92 },
+                  { label: 'Security Score', percentage: 88 },
+                  { label: 'Best Practices', percentage: 85 }
+                ].map((item, idx) => (
+                  <div key={idx}>
+                    <div className="flex justify-between mb-2 text-sm">
+                      <span className="text-slate-400">{item.label}</span>
+                      <span className="text-white font-semibold">{item.percentage}%</span>
+                    </div>
+                    <div className="w-full h-2 rounded-full bg-slate-700/50 overflow-hidden">
+                      <div 
+                        className="h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500"
+                        style={{ width: `${item.percentage}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
