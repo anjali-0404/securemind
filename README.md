@@ -1,4 +1,4 @@
-# 🔐 SecureMind AI  
+# 🔐 SecureMind 
 ### A Trust Framework for AI-Generated Code Security
 
 ---
@@ -39,7 +39,7 @@ This creates a **security vs productivity trade-off** for developers.
 
 ---
 
-## 💡 Our Solution – SecureMind AI
+## 💡 Our Solution – SecureMind 
 
 SecureMind AI treats **AI-generated code as a separate risk category** and provides a **multi-layered, explainable security analysis pipeline**.
 
@@ -53,7 +53,7 @@ SecureMind AI treats **AI-generated code as a separate risk category** and provi
 
 ---
 
-## ⚙️ How SecureMind AI Works
+## ⚙️ How SecureMind Works
 
 1. **Code Input**  
    - AI-generated code via file upload, CI/CD pipeline, or VS Code extension  
@@ -84,9 +84,9 @@ SecureMind AI treats **AI-generated code as a separate risk category** and provi
 
 ---
 
-## ⭐ Unique Features (What Makes SecureMind AI Different)
+## ⭐ Unique Features (What Makes SecureMind Different)
 
-| Feature | Existing Tools | SecureMind AI |
+| Feature | Existing Tools | SecureMind |
 |------|---------------|---------------|
 | AI-Generated Code Awareness | ❌ | ✅ |
 | Hallucination Detection | ❌ | ✅ |
@@ -193,17 +193,17 @@ This makes security a **native part of development**, not an afterthought.
 
 ## 🏁 Conclusion
 
-SecureMind AI addresses one of the most critical challenges in modern software development — **trusting AI-generated code**.
+SecureMind addresses one of the most critical challenges in modern software development — **trusting AI-generated code**.
 
-By combining AI-aware vulnerability detection, hallucination analysis, automated secure patching, and explainable AI insights, SecureMind AI ensures that **AI accelerates development without compromising security**.
+By combining AI-aware vulnerability detection, hallucination analysis, automated secure patching, and explainable AI insights, SecureMind ensures that **AI accelerates development without compromising security**.
 
-> **SecureMind AI is not just a security tool — it is a trust framework for AI-generated code.**
+> **SecureMind is not just a security tool — it is a trust framework for AI-generated code.**
 
 ---
 
 ## 👥 Team
 
-**SecureMind AI**
+**SecureMind**
 - Anjali Tripathi  
 - Kruparani Tomar  
 
