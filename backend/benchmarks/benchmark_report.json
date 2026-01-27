@@ -1,0 +1,243 @@
+{
+  "timestamp": "2026-01-18 12:55:49",
+  "model_info": {},
+  "performance_metrics": {
+    "overall": {
+      "accuracy": 0.9991,
+      "precision": 0.9991,
+      "recall": 0.9991,
+      "f1_score": 0.9991,
+      "total_samples": 1053
+    },
+    "per_class": {
+      "vulnerable": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 351
+      },
+      "safe": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 351
+      },
+      "hallucinated": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 351
+      }
+    },
+    "confusion_matrix": [
+      [
+        351,
+        0,
+        0
+      ],
+      [
+        0,
+        351,
+        0
+      ],
+      [
+        0,
+        1,
+        350
+      ]
+    ]
+  },
+  "inference_benchmarks": {
+    "single_inference": {
+      "samples": 1000,
+      "avg_time_ms": 109.0876,
+      "min_time_ms": 77.2495,
+      "max_time_ms": 194.3779,
+      "p95_time_ms": 129.6808,
+      "p99_time_ms": 139.5043,
+      "throughput_per_second": 9.17
+    },
+    "batch_inference": {
+      "batch_1": {
+        "batch_size": 1,
+        "total_time_ms": 111.3703,
+        "time_per_sample_ms": 111.3703,
+        "throughput": 8.98
+      },
+      "batch_10": {
+        "batch_size": 10,
+        "total_time_ms": 135.6423,
+        "time_per_sample_ms": 13.5642,
+        "throughput": 73.72
+      },
+      "batch_50": {
+        "batch_size": 50,
+        "total_time_ms": 156.0369,
+        "time_per_sample_ms": 3.1207,
+        "throughput": 320.44
+      },
+      "batch_100": {
+        "batch_size": 100,
+        "total_time_ms": 172.5032,
+        "time_per_sample_ms": 1.725,
+        "throughput": 579.7
+      },
+      "batch_500": {
+        "batch_size": 500,
+        "total_time_ms": 298.7185,
+        "time_per_sample_ms": 0.5974,
+        "throughput": 1673.82
+      }
+    }
+  },
+  "cross_validation_results": {},
+  "feature_analysis": {},
+  "confusion_matrices": {},
+  "memory_benchmarks": {
+    "model_size_mb": 0.0,
+    "vectorizer_size_mb": 0.0,
+    "total_size_mb": 0.0,
+    "feature_dimensions": 3000
+  },
+  "scalability_benchmarks": {
+    "size_100": {
+      "dataset_size": 100,
+      "vectorization_time_ms": 15.5232,
+      "prediction_time_ms": 125.823,
+      "total_time_ms": 141.3462,
+      "avg_per_sample_ms": 1.4135
+    },
+    "size_500": {
+      "dataset_size": 500,
+      "vectorization_time_ms": 62.4235,
+      "prediction_time_ms": 189.6162,
+      "total_time_ms": 252.0397,
+      "avg_per_sample_ms": 0.5041
+    },
+    "size_1000": {
+      "dataset_size": 1000,
+      "vectorization_time_ms": 142.1776,
+      "prediction_time_ms": 206.5244,
+      "total_time_ms": 348.702,
+      "avg_per_sample_ms": 0.3487
+    },
+    "size_5000": {
+      "dataset_size": 5000,
+      "vectorization_time_ms": 621.8736,
+      "prediction_time_ms": 268.8241,
+      "total_time_ms": 890.6977,
+      "avg_per_sample_ms": 0.1781
+    }
+  },
+  "feature_importance": {
+    "total_features": 2608,
+    "top_20_features": [
+      {
+        "rank": 1,
+        "feature_index": 752,
+        "importance": 0.018559
+      },
+      {
+        "rank": 2,
+        "feature_index": 16,
+        "importance": 0.017517
+      },
+      {
+        "rank": 3,
+        "feature_index": 1485,
+        "importance": 0.012751
+      },
+      {
+        "rank": 4,
+        "feature_index": 0,
+        "importance": 0.012397
+      },
+      {
+        "rank": 5,
+        "feature_index": 2043,
+        "importance": 0.011165
+      },
+      {
+        "rank": 6,
+        "feature_index": 1915,
+        "importance": 0.010794
+      },
+      {
+        "rank": 7,
+        "feature_index": 1966,
+        "importance": 0.010412
+      },
+      {
+        "rank": 8,
+        "feature_index": 196,
+        "importance": 0.010162
+      },
+      {
+        "rank": 9,
+        "feature_index": 147,
+        "importance": 0.010048
+      },
+      {
+        "rank": 10,
+        "feature_index": 1968,
+        "importance": 0.009552
+      },
+      {
+        "rank": 11,
+        "feature_index": 2113,
+        "importance": 0.00935
+      },
+      {
+        "rank": 12,
+        "feature_index": 1753,
+        "importance": 0.009167
+      },
+      {
+        "rank": 13,
+        "feature_index": 2197,
+        "importance": 0.009153
+      },
+      {
+        "rank": 14,
+        "feature_index": 1417,
+        "importance": 0.009024
+      },
+      {
+        "rank": 15,
+        "feature_index": 975,
+        "importance": 0.008611
+      },
+      {
+        "rank": 16,
+        "feature_index": 40,
+        "importance": 0.008486
+      },
+      {
+        "rank": 17,
+        "feature_index": 1245,
+        "importance": 0.008254
+      },
+      {
+        "rank": 18,
+        "feature_index": 1757,
+        "importance": 0.007876
+      },
+      {
+        "rank": 19,
+        "feature_index": 1730,
+        "importance": 0.007555
+      },
+      {
+        "rank": 20,
+        "feature_index": 722,
+        "importance": 0.007528
+      }
+    ],
+    "feature_importance_stats": {
+      "mean": 0.000383,
+      "std": 0.001273,
+      "min": 0.0,
+      "max": 0.018559
+    }
+  }
+}
