@@ -59,6 +59,10 @@ function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  (import.meta.env.DEV ? 'http://localhost:8000' : '/api');
+
 // --- Helper Components ---
 
 const DiffView = ({ original, fixed }) => (
@@ -743,8 +747,8 @@ const AnalyticsView = () => {
     const fetchAnalytics = async () => {
       try {
         const [trendsRes, categoriesRes] = await Promise.all([
-          fetch('http://localhost:8000/analytics'),
-          fetch('http://localhost:8000/issues-by-category')
+          fetch(`${API_BASE_URL}/analytics`),
+          fetch(`${API_BASE_URL}/issues-by-category`)
         ]);
         
         const trends = await trendsRes.json();
@@ -1240,7 +1244,7 @@ function App() {
     try {
       // Simulate a bit of "processing" time for effect if response is too fast
       const startTime = Date.now();
-      const response = await axios.post('http://localhost:8000/analyze', { code });
+      const response = await axios.post(`${API_BASE_URL}/analyze`, { code });
       const elapsedTime = Date.now() - startTime;
       
       if (elapsedTime < 800) {
